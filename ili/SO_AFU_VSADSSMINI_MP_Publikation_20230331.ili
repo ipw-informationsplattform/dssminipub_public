@@ -1,0 +1,243 @@
+INTERLIS 2.3;
+
+/**
+ * !!------------------------------------------------------------------------------
+ * !! Version    | wer | Änderung
+ * !!------------------------------------------------------------------------------
+ * !! 2022-07-11 | SHE | Erste publizierte Version
+ * !! 2022-07-27 | SHE | Umbenennung Klassenname 'ALR_TEZG' nach 'TEZG'
+ * !! 2022-11-09 | SHE | Beschriftung für TEZG entfernt
+ * !! 2023-02-28 | SHE | Aufhebung Publikationsmodell ALR -> Import ALR aus Base / Update TEZG
+ * !! 2023-03-31 | SHE | Ergänzung TOPIC Mangel
+ * !! 2023-04-04 | SHE | Formatierung gemäss Vorgaben Modellierungshandbuch Kt. SO
+ * !!==============================================================================
+ */
+!!@ technicalContact = "mailto:agi@bd.so.ch"
+
+MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
+  AT "https://afu.so.ch"
+  VERSION "2023-03-31" =
+  IMPORTS GeometryCHLV95_V1,
+          SO_AFU_VSADSSMINI_Base_Publikation_20230331,
+          SO_AFU_VSADSSMINI_TEZG_Publikation_20230331;
+
+  /** Filter: FunktionHierarchisch = PAA resp PAA.*
+   */
+  TOPIC PAA =
+    OID AS INTERLIS.UUIDOID;
+
+    /**
+     *  Punktobjekte
+     */
+
+    /** Spezialbauwerke - Filter: Funktion (alle diejenigen, welche separate Symbole haben gemäss Entscheidungsbaum)
+     */
+    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.SBW_BaseClass =
+    END SBW;
+
+    /** Schacht - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    END Schacht_SE;
+
+    /** Beschriftung für Punktobjekte
+     */
+    CLASS Beschriftung_P EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    END Beschriftung_P;
+
+    /**
+     * Linienobjekte
+     */
+
+    /** Leitung - Filter: FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    END Leitung_SE;
+
+    /** Beschriftung für Linienobjekte
+     */
+    CLASS Beschriftung_L EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    END Beschriftung_L;
+
+    /**
+     *  Flächenobjekte
+     */
+
+    /** Bauwerksflächen
+     */
+    CLASS BW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.BW_BaseClass =
+    END BW;
+
+    /** keine Beschriftung für Flächenobjekte
+    */
+
+  END PAA;
+
+  /** Teileinzugsgebiete und Perimeter öffentliche Kanalisation
+   */
+  TOPIC TEZG =
+    OID AS INTERLIS.UUIDOID;
+
+    /**
+     *  Flächenobjekte
+     */
+
+    /** Teileinzugsgebiete
+     */
+    CLASS TEZG_Soll EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_BaseClass =
+    END TEZG_Soll;
+
+    /** Perimeter öffentliche Kanalisation
+     */
+    CLASS OeKan EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_OI_BaseClass=
+    END OeKan;
+
+    /** keine Beschriftung für Teileinzugsgebiete
+     */
+
+  END TEZG;
+
+  /** Abwasserentsorgung im ländlichen Raum ALR
+   */
+  TOPIC ALR =
+    OID AS INTERLIS.UUIDOID;
+
+    /**
+     *  Punktobjekte
+     */
+
+    /** Art der Entwässerung
+     */
+    CLASS Entwaesserungsart EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.ALR_BaseClass =  
+    END Entwaesserungsart;
+
+    /** keine Beschriftung für Punktobjekte
+     */
+
+    /**
+     *  Flächenobjekte
+     */
+    
+    /** Teileinzugsgebiete
+     */
+    CLASS TEZG EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_BaseClass =
+    END TEZG;
+
+    /** keine Beschriftung für Flächenobjekte
+     */
+
+  END ALR;
+
+  /** Massnahmen, die im Rahmen des GEP erarbeitet wurden und Stand ihrer Umsetzung
+   */
+  TOPIC Massnahmen =
+    OID AS INTERLIS.UUIDOID;
+
+    /** Massnahmen Punktsymbol
+     */
+    CLASS Massnahme_P =
+      /** Bemerkung des Projektverfassers
+       */
+      Bemerkung: TEXT*80;
+      /** Beschreibung der Massnahme
+       */
+      Beschreibung: TEXT*100;
+      /** Bezeichnung der Massnahme
+       */
+      Bezeichnung: MANDATORY TEXT*50;
+      /** Datum der Aufnahme der Massnahme in die Massnahmenliste
+       */
+      Datum_Eingang: INTERLIS.INTERLIS_1_DATE;
+      /** Kosten der Massnahme
+       */
+      Gesamtkosten: 0.00 .. 99999999.99;
+      /** Kurzbeschreibung des Handlungsbedarfs
+       */
+      Handlungsbedarf: MTEXT*255;
+      /** Jahr, in dem die Massnahme effektiv umgesetzt wurde
+       */
+      Jahr_Umsetzung_effektiv: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+      /** Jahr, bis die Massnahme umgesetzt sein soll
+       */
+      Jahr_Umsetzung_geplant: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+      /** Massnahmenkategorie (z. B. 'Erhaltung_Erneuerung', 'Fremdwasserreduktion' usw.)
+       */
+      Kategorie: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Priorität der Massnahme
+       */
+      Prioritaet: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Status der Massnahme (z. B. 'erledigt', 'sistiert' usw.)
+       */
+      Status: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+      /** Lage des Symbols
+       */
+      SymbolPos: MANDATORY GeometryCHLV95_V1.Coord2;
+      /** Denormalisierung der Rolle TraegerschaftRef->Bezeichnung
+       */
+      Traegerschaft_Bezeichnung : TEXT*255;
+      /** Denormalisierung der Rolle Verantwortlich_AusloesungRef->Bezeichnung
+       */
+      Verantwortlich_Ausloesung_Bezeichnung : TEXT*255;
+      /** Verweis auf andere Massnahmen
+       */
+      Verweis: MTEXT*255;
+    END Massnahme_P;
+
+    /** Massnahme linienförmig */
+    CLASS Massnahme_L =
+      /** linienförmiger Verlauf der Massnahme
+       */
+      Linie: MANDATORY GeometryCHLV95_V1.Line;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+    END Massnahme_L;
+
+    /** Massnahme flächenförmig
+     */
+    CLASS Massnahme_A =
+      /** flächenförmige Ausdehnung der Massnahme
+       */
+      Perimeter: MANDATORY GeometryCHLV95_V1.Surface;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+    END Massnahme_A;
+
+  END Massnahmen;
+
+  /** Objekte, denen aufgrund mangelnder Attributwerte keine Stil-Id zugeordnet werden konnte
+   */
+  TOPIC Mangel =
+    OID AS INTERLIS.UUIDOID;
+
+    /** Mangelhafte Knoten
+     */
+    CLASS Knoten EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+      /** Lage des mangelhaften Knotens
+       */
+      Lage : MANDATORY GeometryCHLV95_V1.Coord2;
+    END Knoten;
+
+    /** Mangelhafte Leitungen
+     */
+    CLASS Leitung EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+      /** Verlauf der mangelhaften Leitung
+       */
+      Verlauf : MANDATORY GeometryCHLV95_V1.Line;
+    END Leitung;
+
+    /** Mangelhaftes Teileinzugsgebiet
+     */
+    CLASS TEZG EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+      /** Perimeter des mangelhaften Teileinzugsgebietes
+       */
+      Perimeter: MANDATORY GeometryCHLV95_V1.Surface;
+    END TEZG;
+  
+  END Mangel;
+
+END SO_AFU_VSADSSMINI_MP_Publikation_20230331.

@@ -1,0 +1,168 @@
+INTERLIS 2.3;
+
+/**
+ * !!------------------------------------------------------------------------------
+ * !! Version    | wer | Änderung
+ * !!------------------------------------------------------------------------------
+ * !! 2022-03-06 | SHE | Bereinigte Version nach Abschluss Pilotphase (Stefan Henrich)
+ * !! 2022-03-08 | SHE | Auslagern von Komponenten nach VSADSSMINI_Base_Publikation
+ * !! 2022-03-23 | SHE | Auslagern weiterer Komponenten nach VSADSSMINI_Base_Publikation
+ * !! 2022-06-17 | SHE | Reduktion der Anzahl Klassen aufgrund neuen Anforderungen an Darstellung
+ * !! 2022-07-04 | SHE | Ergänzung Attribut Nutzungsart_geplant in Base-Modell
+ * !! 2023-02-28 | SHE | Anpassungen aufgrund Update Base
+ * !! 2023-03-31 | SHE | Ergänzung TOPIC Mangel
+ * !! 2023-04-04 | SHE | Formatierung gemäss Vorgaben Modellierungshandbuch Kt. SO
+ * !!==============================================================================
+ */
+!!@ technicalContact = "mailto:agi@bd.so.ch"
+
+MODEL SO_AFU_VSADSSMINI_WK_Publikation_20230331 (de)
+  AT "https://afu.so.ch"
+  VERSION "2023-03-31" =
+  IMPORTS GeometryCHLV95_V1,
+          SO_AFU_VSADSSMINI_Base_Publikation_20230331;
+
+  /** Filter: FunktionHierarchisch = PAA resp PAA.*
+   */
+  TOPIC PAA =
+    OID AS INTERLIS.UUIDOID;
+
+    /**
+     *  Punktobjekte
+     */
+
+    /** Spezialbauwerke - Filter: Funktion (alle diejenigen, welche separate Symbole haben gemäss Entscheidungsbaum)
+     */
+    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.SBW_BaseClass =
+    END SBW;
+
+    /** Schacht - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    END Schacht_SE;
+
+    /** Schacht (Drainagen) - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch = (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Schacht_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    END Schacht_Dr;
+
+    /** Beschriftung für Punktobjekte
+     */
+    CLASS Beschriftung_P EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    END Beschriftung_P;
+
+    /**
+     * Linienobjekte
+     */
+
+    /** Leitung - Filter: FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    END Leitung_SE;
+
+    /** Leitung (Drainage) - Filter: FunktionHydraulisch = (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Leitung_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    END Leitung_Dr;
+
+    /** Beschriftung für Linienobjekte
+     */
+    CLASS Beschriftung_L EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    END Beschriftung_L;
+
+    /**
+     *  Flächenobjekte
+     */
+
+    /** Bauwerksflächen
+     */
+    CLASS BW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.BW_BaseClass =
+    END BW;
+
+    /** keine Beschriftung für Flächenobjekte
+    */
+
+  END PAA;
+
+  /** Filter: FunktionHierarchisch = SAA resp SAA.*
+   */
+   TOPIC SAA =
+    OID AS INTERLIS.UUIDOID;
+
+    /**
+     *  Punktobjekte
+     */
+
+    /** Spezialbauwerke - Filter: Funktion (alle diejenigen, welche separate Symbole haben gemäss Entscheidungsbaum)
+     */
+    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.SBW_BaseClass =
+    END SBW;
+
+    /** Schacht - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    END Schacht_SE;
+
+    /** Schacht (Drainagen) - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch = (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Schacht_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    END Schacht_Dr;
+
+    /** keine Beschriftung für Punktobjekte SAA
+     */
+
+    /**
+     *  Linienobjekte
+     */
+
+    /** Leitung - Filter: FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    END Leitung_SE;
+
+    /** Leitung (Drainage) - Filter: FunktionHydraulisch = (#Drainagetransportleitung OR #Sickerleitung)
+     */
+    CLASS Leitung_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    END Leitung_Dr;
+
+    /** keine Beschriftung für Linienobjekte SAA
+     */
+
+    /**
+     *  Flächenobjekte
+     */
+
+    /** Bauwerksflächen
+     */
+    CLASS BW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.BW_BaseClass =
+    END BW;
+
+    /** keine Beschriftung für Flächenobjekte
+     */
+
+  END SAA;
+
+  /** Objekte, denen aufgrund mangelnder Attributwerte keine Stil-Id zugeordnet werden konnte
+   */
+  TOPIC Mangel =
+    OID AS INTERLIS.UUIDOID;
+
+    /** Mangelhafte Knoten
+     */
+    CLASS Knoten EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+      /** Lage des mangelhaften Knotens
+       */
+      Lage : MANDATORY GeometryCHLV95_V1.Coord2;
+    END Knoten;
+
+    /** Mangelhafte Leitungen
+     */
+    CLASS Leitung EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+      /** Verlauf der mangelhaften Leitung
+       */
+      Verlauf : MANDATORY GeometryCHLV95_V1.Line;
+    END Leitung;
+
+  END Mangel;
+
+END SO_AFU_VSADSSMINI_WK_Publikation_20230331.

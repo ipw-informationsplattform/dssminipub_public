@@ -1,0 +1,314 @@
+INTERLIS 2.3;
+
+/**
+ * !!------------------------------------------------------------------------------
+ * !! Version    | wer | Änderung
+ * !!------------------------------------------------------------------------------
+ * !! 2022-06-17 | SHE | Erstpublikation IPW
+ * !! 2022-07-04 | SHE | Ergänzung Attribut Nutzungsart_geplant für Klassen Schacht und Bauwerk
+ * !! 2023-02-28 | SHE | Aufhebung Publikationsmodell ALR; Integration ALR in Base
+ * !! 2023-03-31 | SHE | Ergänzung Mangel (Mangel_BaseClass)
+ * !! 2023-04-04 | SHE | Formatierung gemäss Vorgaben Modellierungshandbuch Kt. SO
+ * !!==============================================================================
+ */
+!!@ technicalContact = "mailto:agi@bd.so.ch"
+
+TYPE MODEL SO_AFU_VSADSSMINI_Base_Publikation_20230331 (de)
+  AT "https://afu.so.ch"
+  VERSION "2023-03-31" =
+  IMPORTS GeometryCHLV95_V1;
+
+  DOMAIN
+
+    /** Domain zum Vorhalten eines Aufzählwertes als Text
+     */
+    Aufzaehlwert = TEXT*255;
+    /** Wegen Konformität zum Quellmodell wird hier auf den Datentyp 'GregorianYear' verzichtet
+     */
+    Jahr = 1800 .. 2100;
+
+    /** Abstrakte Basisklasse für Spezialbauwerke
+     */
+    CLASS SBW_BaseClass (ABSTRACT) =
+      /** Baujahr des Spezialbauwerkes
+       */
+      Baujahr : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+      /** Baulicher Zustand des Spezialbauwerkes
+       */
+      BaulicherZustand : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Denormalisierung der Rolle BetreiberRef->Bezeichnung
+       */
+      Betreiber_Bezeichnung : TEXT*255;
+      /** Denormalisierung der Rolle BetreiberRef->Organisationstyp
+       */
+      Betreiber_Organisationstyp : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Bezeichung des Spezialbauwerkes
+       */
+      Bezeichnung : TEXT*20;
+      /** Denormalisierung der Rolle EigentuemerRef->Bezeichnung
+       */
+      Eigentuemer_Bezeichnung : TEXT*255;
+      /** Denormalisierung der Rolle EigentuemerRef->Organisationstyp
+       */
+      Eigentuemer_Organisationstyp : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Funktion des Spezialbauwerkes
+       */
+      Funktion : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Funktion hierarchisch des Spezialbauwerkes (PAA, SAA)
+       */
+      FunktionHierarchisch : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Lage des Spezialbauwerkes
+       */
+      Lage : MANDATORY GeometryCHLV95_V1.Coord2;
+      /** STANDARDOID des Objektes aus VSA-DSS-Mini
+       */
+      OID_DSS : INTERLIS.STANDARDOID;
+      /** Status des Spezialbauwerkes (z. B. in_Betrieb, ausser_Betrieb usw.)
+       */
+      Status : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+      /** Jahr, in welchem die Zustandserhebung durchgeführt wurde
+       */
+      Zustandserhebung_Jahr : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+    END SBW_BaseClass;
+
+    /** Abstrakte Basisklasse für Schächte
+     */
+     CLASS Schacht_BaseClass (ABSTRACT) =
+      /** Baujahr des Schachtes
+       */
+      Baujahr : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+      /** Baulicher Zustand des Schachtes
+       */
+      BaulicherZustand : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Denormalisierung der Rolle BetreiberRef->Bezeichnung
+       */
+      Betreiber_Bezeichnung : TEXT*255;
+      /** Denormalisierung der Rolle BetreiberRef->Organisationstyp
+       */
+      Betreiber_Organisationstyp : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Bezeichung des Schachtes
+       */
+      Bezeichnung : TEXT*20;
+      /** Kote des Schachtdeckels
+       */
+      Deckelkote : -200.000 .. 5000.000;
+      /** Denormalisierung der Rolle EigentuemerRef->Bezeichnung
+       */
+      Eigentuemer_Bezeichnung : TEXT*255;
+      /** Denormalisierung der Rolle EigentuemerRef->Organisationstyp
+       */
+      Eigentuemer_Organisationstyp : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Finanzierungart des Schachtes (öffentlich, privat)
+       */
+      Finanzierung : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Funktion des Schachtes
+       */
+      Funktion : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Funktion hierarchisch des Schachtes (PAA, SAA)
+       */
+      FunktionHierarchisch : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Lage des Schachtes
+       */
+      Lage : MANDATORY GeometryCHLV95_V1.Coord2;
+      /** zukünftig geplante Nutzungsart des Schachtes (z. B. Schmutzabwasser, Mischabwasser usw.)
+       */
+      Nutzungsart_geplant : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** heute zulässige/tatsächliche Nutzungsart des Schachtes (z. B. Schmutzabwasser, Mischabwasser usw.)
+       */
+      Nutzungsart_Ist : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** STANDARDOID des Objektes aus VSA-DSS-Mini
+       */
+      OID_DSS : INTERLIS.STANDARDOID;
+      /** Kote des Schachtsohle
+       */
+      Sohlenkote : -200.000 .. 5000.000;
+      /** Status des Schachtes (z. B. in_Betrieb, ausser_Betrieb usw.)
+       */
+      Status : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+      /** Jahr, in welchem die Zustandserhebung durchgeführt wurde
+       */
+      Zustandserhebung_Jahr : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+    END Schacht_BaseClass;
+
+    /** Abstrakte Basisklasse für Leitungen
+     */
+     CLASS Leitung_BaseClass (ABSTRACT) =
+      /** Baujahr der Leitung
+       */
+      Baujahr : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+      /** Baulicher Zustand der Leitung
+       */
+      BaulicherZustand : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Bezeichung der Leitung
+       */
+      Bezeichnung : TEXT*41;
+      /** Denormalisierung der Rolle EigentuemerRef->Bezeichnung
+       */
+      Eigentuemer_Bezeichnung : TEXT*255;
+      /** Denormalisierung der Rolle EigentuemerRef->Organisationstyp
+       */
+      Eigentuemer_Organisationstyp : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Finanzierungart der Leitung (öffentlich, privat)
+       */
+      Finanzierung : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Funktion hierarchisch der Leitung (PAA.*, SAA.*)
+       */
+      FunktionHierarchisch : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Funktion hydraulisch der Leitung (z. B. Freispiegelleitung, Pumpendruckleitung usw.)
+       */
+      FunktionHydraulisch : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** effektive Länge der Leitung
+       */
+      LaengeEffektiv : 0.00 .. 30000.00;
+      /** Lagebestimmung der Leitung (genau, ungenau, unbekannt)
+       */
+      Lagebestimmung : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** System zum Schutz vor Austritt in Grundwasserschutzzonen (vorhanden, nicht_vorhanden, unbekannt)
+       */
+      Leckschutz : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Lichte Breite der Leitung, in [mm]
+       */
+      Lichte_Breite : 0 .. 99999;
+      /** Lichte Höhe der Leitung, in [mm]
+       */
+      Lichte_Hoehe : 0 .. 99999;
+      /** Material der Leitung
+       */
+      Material : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** zukünftig geplante Nutzungsart der Leitung (z. B. Schmutzabwasser, Mischabwasser usw.)
+       */
+      Nutzungsart_geplant : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** heute zulässige/tatsächliche Nutzungsart der Leitung (z. B. Schmutzabwasser, Mischabwasser usw.)
+       */
+      Nutzungsart_Ist : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** STANDARDOID des Objektes aus VSA-DSS-Mini
+       */
+      OID_DSS : INTERLIS.STANDARDOID;
+      /** Rohrprofiltyp der Leitung
+       */
+      Profiltyp : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Art des Relinings
+       */
+      Reliner_Art : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Status der Leitung (z. B. in_Betrieb, ausser_Betrieb usw.)
+       */
+      Status : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+      /** Leitungsverlauf
+       */
+      Verlauf : MANDATORY GeometryCHLV95_V1.Line;
+      /** Jahr, in welchem die Zustandserhebung durchgeführt wurde
+       */
+      Zustandserhebung_Jahr : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+    END Leitung_BaseClass;
+
+    /** Abstrakte Basisklasse für Bauwerke (Detailgeometrie)
+     */
+     CLASS BW_BaseClass (ABSTRACT) =
+      /** Detailgeometrie des Bauwerkes
+       */ 
+      Detailgeometrie : MANDATORY GeometryCHLV95_V1.Surface;
+      /** Denormalisierung der Rolle EigentuemerRef->Organisationstyp
+       */
+      Eigentuemer_Organisationstyp : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Finanzierungart des Bauwerkes (öffentlich, privat)
+       */
+      Finanzierung : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Funktion hierarchisch des Bauwerkes (PAA.*, SAA.*)
+       */
+      FunktionHierarchisch : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** zukünftig geplante Nutzungsart des Bauwerkes (z. B. Schmutzabwasser, Mischabwasser usw.)
+       */
+      Nutzungsart_geplant : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** heute zulässige/tatsächliche Nutzungsart des Bauwerkes (z. B. Schmutzabwasser, Mischabwasser usw.)
+       */
+      Nutzungsart_Ist : SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** STANDARDOID des Objektes aus VSA-DSS-Mini
+       */
+      OID_DSS : INTERLIS.STANDARDOID;
+      /** Status des Bauwerkes (z. B. in_Betrieb, ausser_Betrieb usw.)
+       */
+      Status : MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+    END BW_BaseClass;
+
+    /** Abstrakte Basisklasse für Beschriftungen
+     */
+    CLASS Beschriftung_BaseClass (ABSTRACT) =
+      /** Beschriftungsinhalt
+       */
+      Textinhalt : MANDATORY MTEXT*255;
+      /** Position der Beschriftung
+       */
+      TextPos : MANDATORY GeometryCHLV95_V1.Coord2;
+      /** Orientierung der Beschriftung
+       */
+      TextOri : 0.0 .. 359.9 CIRCULAR;
+      /** Horizontale Ausrichtung der Beschriftung
+       */
+      TextHAli : INTERLIS.HALIGNMENT;
+      /** Vertikale Ausrichtung der Beschriftung
+       */
+      TextVAli : INTERLIS.VALIGNMENT;
+      /** STANDARDOID des Objektes, zu welchem die Beschriftung gehört
+       */
+      Ref : INTERLIS.STANDARDOID;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+    END Beschriftung_BaseClass;
+
+    /** Abstrakte Basisklasse für Abwasserentsorgung im ländlichen Raum ALR
+     */
+     CLASS ALR_BaseClass (ABSTRACT) =
+      /** Aktuelle Beseitigung des Abwassers
+       */
+      Beseitigung_Ist: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Bezeichnung des ALR-Objektes
+       */
+      Bezeichnung: MANDATORY TEXT*20;
+      /** Einwohnerwerte des Abwasseranfalls
+       */
+      Einwohnerwerte: 0 .. 300000;
+      /** generalisierte Lage der Gebäudegruppe
+       */
+      Lage: MANDATORY GeometryCHLV95_V1.Coord2;
+      /** Sanierungsbedarf vorhanden
+       */
+      Sanierungsbedarf: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      /** Sanierungsdatum
+       */
+      Sanierungsdatum: INTERLIS.INTERLIS_1_DATE;
+      /** Sanierungskonzept (Kurzfassung)
+       */
+      Sanierungskonzept: MTEXT*255;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+    END ALR_BaseClass;
+
+    /** Abstrakte Basisklasse für Objekte, die mangels Attributwerten nicht korrekt dargestellt werden können
+     */
+    CLASS Mangel_BaseClass (ABSTRACT) =
+      /** Beschreibung des Mangels
+       */
+      Beschreibung : TEXT*100;
+      /** STANDARDOID des Objektes in VSA-DSS-Mini
+       */
+      OID_DSS : INTERLIS.STANDARDOID;
+      /** Stil-Id gemäss Darstellungsmodell
+       */
+      StilId : MANDATORY TEXT*50;
+    END Mangel_BaseClass;
+
+END SO_AFU_VSADSSMINI_Base_Publikation_20230331.

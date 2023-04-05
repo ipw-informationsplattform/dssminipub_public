@@ -1,0 +1,4 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 22 22" width="22" height="22">
+   <path d="M 1,11.000 11,1 21,11 11,21 z" opacity="1" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1" stroke-opacity="0" />
+   <path d="M 11,22 C 14.880892,18.11996 18.627246,14.37343 22,11.000517 18.119108,7.1193394 14.372754,3.3730157 11,-3.0026644e-7 7.1872049,3.8129743 3.2710227,7.7294443 0,11.000517 3.8807885,14.881592 7.6268324,18.627087 11,22 z M 1.4639759,11.000517 11,1.463734 l 9.536645,9.536783 z" opacity="1" fill="param(fill)#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1" stroke-opacity="0"/>
+</svg>

@@ -1,0 +1,13 @@
+DELETE FROM se_mp_pub.alr_entwaesserungsart;
+DELETE FROM se_mp_pub.alr_tezg;
+DELETE FROM se_mp_pub.massnahmen_massnahme_a;
+DELETE FROM se_mp_pub.massnahmen_massnahme_l;
+DELETE FROM se_mp_pub.massnahmen_massnahme_p;
+DELETE FROM se_mp_pub.paa_beschriftung_l;
+DELETE FROM se_mp_pub.paa_beschriftung_p;
+DELETE FROM se_mp_pub.paa_bw;
+DELETE FROM se_mp_pub.paa_leitung_se;
+DELETE FROM se_mp_pub.paa_sbw;
+DELETE FROM se_mp_pub.paa_schacht_se;
+DELETE FROM se_mp_pub.tezg_oekan;
+DELETE FROM se_mp_pub.tezg_tezg_soll;

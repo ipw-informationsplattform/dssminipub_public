@@ -1,0 +1,4 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15" width="15" height="15">
+   <path d="m 14.5,7.5 c 0,3.913967 -3.086033,7 -7,7 -3.9139672,0 -7,-3.086033 -7,-7 0,-3.9139672 3.0860328,-7 7,-7 3.913967,0 7,3.0860328 7,7 z" opacity="1" fill="#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1" stroke-opacity="0" />
+   <path d="M 7.5000001,-2.3076065e-7 C 3.3660953,-2.3076065e-7 0,3.3660951 0,7.5 0,11.634286 3.3660953,15 7.5000001,15 11.634286,15 15,11.634286 15,7.5 15,3.3660951 11.634286,-2.3076065e-7 7.5000001,-2.3076065e-7 z m 0,0.95238102076065 C 11.119048,0.95238079 14.047619,3.880857 14.047619,7.5 H 7.5000001 v 6.547619 C 3.8808572,14.047619 0.95238097,11.119048 0.95238097,7.5 H 7.5000001 V 0.95238079 z" opacity="1" fill="param(fill)#ffffff" fill-opacity="1" stroke="#ffffff" stroke-width="1" stroke-opacity="0"/>
+</svg>

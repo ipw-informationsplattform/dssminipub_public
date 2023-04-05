@@ -1,0 +1,14 @@
+DELETE FROM se_wk_pub.paa_beschriftung_l;
+DELETE FROM se_wk_pub.paa_beschriftung_p;
+DELETE FROM se_wk_pub.paa_bw;
+DELETE FROM se_wk_pub.paa_leitung_dr;
+DELETE FROM se_wk_pub.paa_leitung_se;
+DELETE FROM se_wk_pub.paa_sbw;
+DELETE FROM se_wk_pub.paa_schacht_dr;
+DELETE FROM se_wk_pub.paa_schacht_se;
+DELETE FROM se_wk_pub.saa_bw;
+DELETE FROM se_wk_pub.saa_leitung_dr;
+DELETE FROM se_wk_pub.saa_leitung_se;
+DELETE FROM se_wk_pub.saa_sbw;
+DELETE FROM se_wk_pub.saa_schacht_dr;
+DELETE FROM se_wk_pub.saa_schacht_se;
