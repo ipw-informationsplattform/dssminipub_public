@@ -11,6 +11,7 @@ Der Prozess startet mit dem Hochladen von INTERLIS-Daten im Datenmodell VSA-DSS-
 - `darstellungsmodell`: Darstellungskatalog in tabellarischer Form (xlsx) und Entscheidungsbaum
 - `doc`: Dokumentationen zum Datenfluss in der IPW sowie zum Thema Publikationsmodelle (pdf)
 - `ili`: Publikationsmodelle in INTERLIS
+- `legende`: Legenden für die entsprechenden Planwerke (png)
 - `quelldaten` : INTERLIS Quelldaten im Modell VSA-DSS-Mini für Tests (aus Datenschutzgründen nicht enthalten)
 - `script`: PowerShell-Scripts zum Prozessieren der INTERLIS Modelle und Steuerung des Datenumbaus
 - `sld`: SLD für Geoserver
