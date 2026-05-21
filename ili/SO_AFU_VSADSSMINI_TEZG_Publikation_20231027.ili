@@ -10,15 +10,17 @@ INTERLIS 2.3;
  * !! 2023-02-28 | SHE | Anpassungen aufgrund Update Base
  * !! 2023-03-31 | SHE | Ergänzung TOPIC Mangel
  * !! 2023-04-04 | SHE | Formatierung gemäss Vorgaben Modellierungshandbuch Kt. SO
+ * !! 2023-10-27 | SHE | Anpassungen aufgrund Update Base
+ * !! 2025-05-09 | SHE | Abgleich Multiplizität auf Valildierungsmodelle 20250123 v2025-04-08
  * !!==============================================================================
  */
 !!@ technicalContact = "mailto:agi@bd.so.ch"
 
-MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20230331 (de)
+MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20231027 (de)
   AT "https://afu.so.ch"
-  VERSION "2023-03-31" =
+  VERSION "2025-05-09" =
   IMPORTS GeometryCHLV95_V1,
-          SO_AFU_VSADSSMINI_Base_Publikation_20230331;
+          SO_AFU_VSADSSMINI_Base_Publikation_20231027;
 
   /** Abstrakte Basisklasse für Teileinzugsgebiete
    */
@@ -59,12 +61,15 @@ MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20230331 (de)
     /** Bezeichnung des Teileinzugsgebietes
      */
     Bezeichnung: MANDATORY TEXT*20;
+    /** Dataset (entspricht einem Identifikator wie z. B. einer BFS-Nr.), das jedes Objekt kennzeichnen soll; dient der Selekton der Publikationsdaten gemäss einem Kontext
+     */
+    Dataset: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Datasetwert;
     /** geplante Einleitung des Niederschlagsabwassers in ein Gewässer
      */
-    Direkteinleitung_in_Gewaesser_geplant: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+    Direkteinleitung_in_Gewaesser_geplant: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
     /** Ganz oder teilweise Einleitung des Niederschlagsabwassers in ein Gewässer
      */
-    Direkteinleitung_in_Gewaesser_Ist: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+    Direkteinleitung_in_Gewaesser_Ist: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
     /** Dichte der (physischen) Einwohner im Planungszustand
      */
     Einwohnerdichte_geplant: 0 .. 10000;
@@ -73,10 +78,10 @@ MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20230331 (de)
     Einwohnerdichte_Ist: 0 .. 10000;
     /** geplante Entwässerungsart
      */
-    Entwaesserungssystem_geplant: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+    Entwaesserungssystem_geplant: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
     /** Entwässerungsart im Ist-Zustand
      */
-    Entwaesserungssystem_Ist: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+    Entwaesserungssystem_Ist: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
     /** Flächenmasszahl aus Perimeter
      */
     Flaeche: 0.0000 .. 100000.0000;
@@ -86,18 +91,21 @@ MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20230331 (de)
     /** mittlerer Fremdwasseranfall im Ist-Zustand
      */
     Fremdwasseranfall_Ist: 0.000 .. 100000.000;
+    /** Markierung, die den Datensatz als neueste Version kennzeichnet
+     */
+    IstNeuesteVersion: BOOLEAN;
     /** STANDARDOID des Objektes aus VSA-DSS-Mini
      */
-    OID_DSS : INTERLIS.STANDARDOID;
+    OID_DSS : MANDATORY INTERLIS.STANDARDOID;
     /** Perimeter des Teileinzugsgebietes
      */
     Perimeter: MANDATORY GeometryCHLV95_V1.Surface;
     /** geplante verzögerte Einleitung ins Kanalnetz
      */
-    Retention_geplant: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+    Retention_geplant: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
     /** verzögerte Einleitung ins Kanalnetz Ist-Zustand
      */
-    Retention_Ist: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+    Retention_Ist: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
     /** geplanter mittlerer Schmutzwasseranfall, der ins Kanalnetz eingeitet wird
      */
     Schmutzabwasseranfall_geplant: 0.000 .. 100000.000;
@@ -109,15 +117,21 @@ MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20230331 (de)
     StilId : MANDATORY TEXT*50;
     /** geplante Versickerung des Niederschlagsabwassers
      */
-    Versickerung_geplant: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+    Versickerung_geplant: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
     /** Versickerung des Niederschlagsabwassers Ist-Zustand
      */
-    Versickerung_Ist: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+    Versickerung_Ist: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
   END TEZG_BaseClass;
 
   /** Abstrakte Basisklasse für Orientierungsinhalte
    */
   CLASS TEZG_OI_BaseClass (ABSTRACT) =
+    /** Dataset (entspricht einem Identifikator wie z. B. einer BFS-Nr.), das jedes Objekt kennzeichnen soll; dient der Selekton der Publikationsdaten gemäss einem Kontext
+     */
+    Dataset: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Datasetwert;
+    /** Markierung, die den Datensatz als neueste Version kennzeichnet
+     */
+    IstNeuesteVersion: BOOLEAN;
     /** Perimeter des Orientierungsinhaltes
      */
     Perimeter: MANDATORY GeometryCHLV95_V1.Surface;
@@ -137,17 +151,17 @@ MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20230331 (de)
 
     /** Teileinzugsgebiete
      */
-    CLASS TEZG_Ist EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_BaseClass =
+    CLASS TEZG_Ist EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20231027.TEZG_BaseClass =
     END TEZG_Ist;
 
     /** Perimeter öffentliche Kanalisation
      */
-    CLASS OeKan EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_OI_BaseClass=
+    CLASS OeKan EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20231027.TEZG_OI_BaseClass=
     END OeKan;
 
     /** Beschriftung für Teileinzugsgebiete
      */
-    CLASS Beschriftung_TEZG_Ist EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    CLASS Beschriftung_TEZG_Ist EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Beschriftung_BaseClass =
     END Beschriftung_TEZG_Ist;
 
   END TEZG;
@@ -159,7 +173,7 @@ MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20230331 (de)
 
     /** Mangelhaftes Teileinzugsgebiet
      */
-    CLASS TEZG EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+    CLASS TEZG EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Mangel_BaseClass =
       /** Perimeter des mangelhaften Teileinzugsgebietes
        */
       Perimeter: MANDATORY GeometryCHLV95_V1.Surface;
@@ -167,4 +181,4 @@ MODEL SO_AFU_VSADSSMINI_TEZG_Publikation_20230331 (de)
 
   END Mangel;
   
-END SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.
+END SO_AFU_VSADSSMINI_TEZG_Publikation_20231027.

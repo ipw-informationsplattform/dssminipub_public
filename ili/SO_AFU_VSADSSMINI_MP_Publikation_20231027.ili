@@ -10,16 +10,20 @@ INTERLIS 2.3;
  * !! 2023-02-28 | SHE | Aufhebung Publikationsmodell ALR -> Import ALR aus Base / Update TEZG
  * !! 2023-03-31 | SHE | Ergänzung TOPIC Mangel
  * !! 2023-04-04 | SHE | Formatierung gemäss Vorgaben Modellierungshandbuch Kt. SO
+ * !! 2023-10-27 | SHE | Anpassungen aufgrund Update Base
+ * !! 2025-05-09 | SHE | Abgleich Multiplizität auf Valildierungsmodelle 20250123 v2025-04-08
+ * !! 2025-12-12 | SHE | Ergänzung OID_DSS bei Massnahmen, Punktgeometrie nicht mehr obligatorisch
+ * !! 2026-01-30 | SHE | Massnahmen.Massnahme_P.Bezeichnung von 50 auf 51 Zeichen ergänzt
  * !!==============================================================================
  */
 !!@ technicalContact = "mailto:agi@bd.so.ch"
 
-MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
+MODEL SO_AFU_VSADSSMINI_MP_Publikation_20231027 (de)
   AT "https://afu.so.ch"
-  VERSION "2023-03-31" =
+  VERSION "2026-01-30" =
   IMPORTS GeometryCHLV95_V1,
-          SO_AFU_VSADSSMINI_Base_Publikation_20230331,
-          SO_AFU_VSADSSMINI_TEZG_Publikation_20230331;
+          SO_AFU_VSADSSMINI_Base_Publikation_20231027,
+          SO_AFU_VSADSSMINI_TEZG_Publikation_20231027;
 
   /** Filter: FunktionHierarchisch = PAA resp PAA.*
    */
@@ -32,17 +36,17 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Spezialbauwerke - Filter: Funktion (alle diejenigen, welche separate Symbole haben gemäss Entscheidungsbaum)
      */
-    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.SBW_BaseClass =
+    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.SBW_BaseClass =
     END SBW;
 
     /** Schacht - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Schacht_BaseClass =
     END Schacht_SE;
 
     /** Beschriftung für Punktobjekte
      */
-    CLASS Beschriftung_P EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    CLASS Beschriftung_P EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Beschriftung_BaseClass =
     END Beschriftung_P;
 
     /**
@@ -51,12 +55,12 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Leitung - Filter: FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Leitung_BaseClass =
     END Leitung_SE;
 
     /** Beschriftung für Linienobjekte
      */
-    CLASS Beschriftung_L EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    CLASS Beschriftung_L EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Beschriftung_BaseClass =
     END Beschriftung_L;
 
     /**
@@ -65,7 +69,7 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Bauwerksflächen
      */
-    CLASS BW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.BW_BaseClass =
+    CLASS BW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.BW_BaseClass =
     END BW;
 
     /** keine Beschriftung für Flächenobjekte
@@ -84,12 +88,12 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Teileinzugsgebiete
      */
-    CLASS TEZG_Soll EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_BaseClass =
+    CLASS TEZG_Soll EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20231027.TEZG_BaseClass =
     END TEZG_Soll;
 
     /** Perimeter öffentliche Kanalisation
      */
-    CLASS OeKan EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_OI_BaseClass=
+    CLASS OeKan EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20231027.TEZG_OI_BaseClass=
     END OeKan;
 
     /** keine Beschriftung für Teileinzugsgebiete
@@ -108,7 +112,7 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Art der Entwässerung
      */
-    CLASS Entwaesserungsart EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.ALR_BaseClass =  
+    CLASS Entwaesserungsart EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.ALR_BaseClass =  
     END Entwaesserungsart;
 
     /** keine Beschriftung für Punktobjekte
@@ -120,7 +124,7 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
     
     /** Teileinzugsgebiete
      */
-    CLASS TEZG EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_BaseClass =
+    CLASS TEZG EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20231027.TEZG_BaseClass =
     END TEZG;
 
     /** keine Beschriftung für Flächenobjekte
@@ -141,40 +145,52 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
       Bemerkung: TEXT*80;
       /** Beschreibung der Massnahme
        */
-      Beschreibung: TEXT*100;
-      /** Bezeichnung der Massnahme
+      Beschreibung: MANDATORY TEXT*100;
+      /** Bezeichnung der Massnahme (Feldlänge 50 + 1 Zeichen wegen Kategorisierung A/B/C/D/E)
        */
-      Bezeichnung: MANDATORY TEXT*50;
+      Bezeichnung: MANDATORY TEXT*51;
+      /** Denormalisierung der Rolle DatenherrRef->Bezeichnung
+       */
+      Datenherr_Bezeichnung : TEXT*255;
+      /** Dataset (entspricht einem Identifikator wie z. B. einer BFS-Nr.), das jedes Objekt kennzeichnen soll; dient der Selekton der Publikationsdaten gemäss einem Kontext
+       */
+      Dataset: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Datasetwert;
       /** Datum der Aufnahme der Massnahme in die Massnahmenliste
        */
-      Datum_Eingang: INTERLIS.INTERLIS_1_DATE;
+      Datum_Eingang: MANDATORY INTERLIS.INTERLIS_1_DATE;
       /** Kosten der Massnahme
        */
-      Gesamtkosten: 0.00 .. 99999999.99;
+      Gesamtkosten: MANDATORY 0.00 .. 99999999.99;
       /** Kurzbeschreibung des Handlungsbedarfs
        */
-      Handlungsbedarf: MTEXT*255;
+      Handlungsbedarf: MANDATORY MTEXT*255;
+      /** Markierung, die den Datensatz als neueste Version kennzeichnet
+       */
+      IstNeuesteVersion: BOOLEAN;
       /** Jahr, in dem die Massnahme effektiv umgesetzt wurde
        */
-      Jahr_Umsetzung_effektiv: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+      Jahr_Umsetzung_effektiv: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Jahr;
       /** Jahr, bis die Massnahme umgesetzt sein soll
        */
-      Jahr_Umsetzung_geplant: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Jahr;
+      Jahr_Umsetzung_geplant: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20231027.Jahr;
       /** Massnahmenkategorie (z. B. 'Erhaltung_Erneuerung', 'Fremdwasserreduktion' usw.)
        */
-      Kategorie: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      Kategorie: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
+      /** STANDARDOID des Objektes in VSA-DSS-Mini
+       */
+      OID_DSS : MANDATORY INTERLIS.STANDARDOID;
       /** Priorität der Massnahme
        */
-      Prioritaet: SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      Prioritaet: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
       /** Status der Massnahme (z. B. 'erledigt', 'sistiert' usw.)
        */
-      Status: MANDATORY SO_AFU_VSADSSMINI_Base_Publikation_20230331.Aufzaehlwert;
+      Status: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Aufzaehlwert;
       /** Stil-Id gemäss Darstellungsmodell
        */
       StilId : MANDATORY TEXT*50;
       /** Lage des Symbols
        */
-      SymbolPos: MANDATORY GeometryCHLV95_V1.Coord2;
+      SymbolPos: GeometryCHLV95_V1.Coord2;
       /** Denormalisierung der Rolle TraegerschaftRef->Bezeichnung
        */
       Traegerschaft_Bezeichnung : TEXT*255;
@@ -188,9 +204,18 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Massnahme linienförmig */
     CLASS Massnahme_L =
+      /** Dataset (entspricht einem Identifikator wie z. B. einer BFS-Nr.), das jedes Objekt kennzeichnen soll; dient der Selekton der Publikationsdaten gemäss einem Kontext
+       */
+      Dataset: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Datasetwert;
+      /** Markierung, die den Datensatz als neueste Version kennzeichnet
+       */
+      IstNeuesteVersion: BOOLEAN;
       /** linienförmiger Verlauf der Massnahme
        */
       Linie: MANDATORY GeometryCHLV95_V1.Line;
+      /** STANDARDOID des Objektes in VSA-DSS-Mini
+       */
+      OID_DSS : MANDATORY INTERLIS.STANDARDOID;
       /** Stil-Id gemäss Darstellungsmodell
        */
       StilId : MANDATORY TEXT*50;
@@ -199,6 +224,15 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
     /** Massnahme flächenförmig
      */
     CLASS Massnahme_A =
+      /** Dataset (entspricht einem Identifikator wie z. B. einer BFS-Nr.), das jedes Objekt kennzeichnen soll; dient der Selekton der Publikationsdaten gemäss einem Kontext
+       */
+      Dataset: SO_AFU_VSADSSMINI_Base_Publikation_20231027.Datasetwert;
+      /** Markierung, die den Datensatz als neueste Version kennzeichnet
+       */
+      IstNeuesteVersion: BOOLEAN;
+      /** STANDARDOID des Objektes in VSA-DSS-Mini
+       */
+      OID_DSS : MANDATORY INTERLIS.STANDARDOID;
       /** flächenförmige Ausdehnung der Massnahme
        */
       Perimeter: MANDATORY GeometryCHLV95_V1.Surface;
@@ -216,7 +250,7 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Mangelhafte Knoten
      */
-    CLASS Knoten EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+    CLASS Knoten EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Mangel_BaseClass =
       /** Lage des mangelhaften Knotens
        */
       Lage : MANDATORY GeometryCHLV95_V1.Coord2;
@@ -224,7 +258,7 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Mangelhafte Leitungen
      */
-    CLASS Leitung EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+    CLASS Leitung EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Mangel_BaseClass =
       /** Verlauf der mangelhaften Leitung
        */
       Verlauf : MANDATORY GeometryCHLV95_V1.Line;
@@ -232,7 +266,7 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
 
     /** Mangelhaftes Teileinzugsgebiet
      */
-    CLASS TEZG EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+    CLASS TEZG EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Mangel_BaseClass =
       /** Perimeter des mangelhaften Teileinzugsgebietes
        */
       Perimeter: MANDATORY GeometryCHLV95_V1.Surface;
@@ -240,4 +274,4 @@ MODEL SO_AFU_VSADSSMINI_MP_Publikation_20230331 (de)
   
   END Mangel;
 
-END SO_AFU_VSADSSMINI_MP_Publikation_20230331.
+END SO_AFU_VSADSSMINI_MP_Publikation_20231027.

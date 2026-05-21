@@ -8,16 +8,17 @@ INTERLIS 2.3;
  * !! 2023-02-28 | SHE | Anpassungen aufgrund Update Base / TEZG
  * !! 2023-03-31 | SHE | Ergänzung TOPIC Mangel
  * !! 2023-04-04 | SHE | Formatierung gemäss Vorgaben Modellierungshandbuch Kt. SO
+ * !! 2023-10-27 | SHE | Anpassungen aufgrund Update Base
  * !!==============================================================================
  */
 !!@ technicalContact = "mailto:agi@bd.so.ch"
 
-MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
+MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20231027 (de)
   AT "https://afu.so.ch"
-  VERSION "2023-03-31" =
+  VERSION "2023-10-27" =
   IMPORTS GeometryCHLV95_V1,
-          SO_AFU_VSADSSMINI_Base_Publikation_20230331,
-          SO_AFU_VSADSSMINI_TEZG_Publikation_20230331;
+          SO_AFU_VSADSSMINI_Base_Publikation_20231027,
+          SO_AFU_VSADSSMINI_TEZG_Publikation_20231027;
 
   /** Filter: FunktionHierarchisch = PAA resp PAA.*
    */
@@ -30,22 +31,22 @@ MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
 
     /** Spezialbauwerke - Filter: Funktion (alle diejenigen, welche separate Symbole haben gemäss Entscheidungsbaum)
      */
-    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.SBW_BaseClass =
+    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.SBW_BaseClass =
     END SBW;
 
     /** Schacht - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Schacht_BaseClass =
     END Schacht_SE;
 
     /** Schacht (Drainagen) - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch = (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Schacht_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    CLASS Schacht_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Schacht_BaseClass =
     END Schacht_Dr;
 
     /** Beschriftung für Punktobjekte
      */
-    CLASS Beschriftung_P EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    CLASS Beschriftung_P EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Beschriftung_BaseClass =
     END Beschriftung_P;
 
     /**
@@ -54,17 +55,17 @@ MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
 
     /** Leitung - Filter: FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Leitung_BaseClass =
     END Leitung_SE;
 
     /** Leitung (Drainage) - Filter: FunktionHydraulisch = (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Leitung_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    CLASS Leitung_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Leitung_BaseClass =
     END Leitung_Dr;
 
     /** Beschriftung für Linienobjekte
      */
-    CLASS Beschriftung_L EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Beschriftung_BaseClass =
+    CLASS Beschriftung_L EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Beschriftung_BaseClass =
     END Beschriftung_L;
 
     /** keine Flächenobjekte gemäss Entscheidungsbaum
@@ -83,17 +84,17 @@ MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
 
     /** Spezialbauwerke - Filter: Funktion (alle diejenigen, welche separate Symbole haben gemäss Entscheidungsbaum)
      */
-    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.SBW_BaseClass =
+    CLASS SBW EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.SBW_BaseClass =
     END SBW;
 
     /** Schacht - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    CLASS Schacht_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Schacht_BaseClass =
     END Schacht_SE;
 
     /** Schacht (Drainagen) - Filter: -> Knoten_VonRef->Leitung.FunktionHydraulisch = (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Schacht_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Schacht_BaseClass =
+    CLASS Schacht_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Schacht_BaseClass =
     END Schacht_Dr;
 
     /** keine Beschriftung für Punktobjekte SAA
@@ -105,12 +106,12 @@ MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
 
     /** Leitung - Filter: FunktionHydraulisch != (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    CLASS Leitung_SE EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Leitung_BaseClass =
     END Leitung_SE;
 
     /** Leitung (Drainage) - Filter: FunktionHydraulisch = (#Drainagetransportleitung OR #Sickerleitung)
      */
-    CLASS Leitung_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Leitung_BaseClass =
+    CLASS Leitung_Dr EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Leitung_BaseClass =
     END Leitung_Dr;
 
     /** keine Beschriftung für Linienobjekte SAA
@@ -132,7 +133,7 @@ MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
 
     /** Perimeter öffentliche Kanalisation
      */
-    CLASS OeKan EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20230331.TEZG_OI_BaseClass=
+    CLASS OeKan EXTENDS SO_AFU_VSADSSMINI_TEZG_Publikation_20231027.TEZG_OI_BaseClass=
     END OeKan;
 
     /** keine Beschriftung für Flächenobjekte
@@ -147,7 +148,7 @@ MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
 
     /** Mangelhafte Knoten
      */
-    CLASS Knoten EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+    CLASS Knoten EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Mangel_BaseClass =
       /** Lage des mangelhaften Knotens
        */
       Lage : MANDATORY GeometryCHLV95_V1.Coord2;
@@ -155,7 +156,7 @@ MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
 
     /** Mangelhafte Leitungen
      */
-    CLASS Leitung EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20230331.Mangel_BaseClass =
+    CLASS Leitung EXTENDS SO_AFU_VSADSSMINI_Base_Publikation_20231027.Mangel_BaseClass =
       /** Verlauf der mangelhaften Leitung
        */
       Verlauf : MANDATORY GeometryCHLV95_V1.Line;
@@ -163,4 +164,4 @@ MODEL SO_AFU_VSADSSMINI_ZPK_Publikation_20230331 (de)
 
   END Mangel;
 
-END SO_AFU_VSADSSMINI_ZPK_Publikation_20230331.
+END SO_AFU_VSADSSMINI_ZPK_Publikation_20231027.
