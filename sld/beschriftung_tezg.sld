@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc">
   <NamedLayer>
-    <se:Name>tezg_beschriftung_tezg_soll</se:Name>
+    <se:Name>v_tezg_ist_beschriftung</se:Name>
     <UserStyle>
-      <se:Name>tezg_beschriftung_tezg_soll</se:Name>
+      <se:Name>v_tezg_ist_beschriftung</se:Name>
       <se:FeatureTypeStyle>
         <!--FeatureRenderer nullSymbol not implemented yet-->
         <se:Rule>
@@ -26,7 +26,7 @@
             <se:LabelPlacement>
               <se:PointPlacement>
                 <se:AnchorPoint>
-                  <se:AnchorPointX>0</se:AnchorPointX>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
                   <se:AnchorPointY>0.5</se:AnchorPointY>
                 </se:AnchorPoint>
               </se:PointPlacement>
@@ -47,7 +47,6 @@
               </se:Mark>
               <se:Size>5</se:Size>
             </se:Graphic>
-            <se:VendorOption name="maxDisplacement">1</se:VendorOption>
             <se:VendorOption name="conflictResolution">false</se:VendorOption>
             <se:VendorOption name="graphic-resize">stretch</se:VendorOption>
             <se:VendorOption name="graphic-margin">5 3</se:VendorOption>
@@ -73,7 +72,7 @@
             <se:LabelPlacement>
               <se:PointPlacement>
                 <se:AnchorPoint>
-                  <se:AnchorPointX>0</se:AnchorPointX>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
                   <se:AnchorPointY>0.5</se:AnchorPointY>
                 </se:AnchorPoint>
               </se:PointPlacement>
@@ -94,7 +93,6 @@
               </se:Mark>
               <se:Size>5</se:Size>
             </se:Graphic>
-            <se:VendorOption name="maxDisplacement">1</se:VendorOption>
             <se:VendorOption name="conflictResolution">false</se:VendorOption>
             <se:VendorOption name="graphic-resize">stretch</se:VendorOption>
             <se:VendorOption name="graphic-margin">5 3</se:VendorOption>
@@ -120,7 +118,7 @@
             <se:LabelPlacement>
               <se:PointPlacement>
                 <se:AnchorPoint>
-                  <se:AnchorPointX>0</se:AnchorPointX>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
                   <se:AnchorPointY>0.5</se:AnchorPointY>
                 </se:AnchorPoint>
               </se:PointPlacement>
@@ -141,7 +139,6 @@
               </se:Mark>
               <se:Size>5</se:Size>
             </se:Graphic>
-            <se:VendorOption name="maxDisplacement">1</se:VendorOption>
             <se:VendorOption name="conflictResolution">false</se:VendorOption>
             <se:VendorOption name="graphic-resize">stretch</se:VendorOption>
             <se:VendorOption name="graphic-margin">5 3</se:VendorOption>
@@ -167,7 +164,7 @@
             <se:LabelPlacement>
               <se:PointPlacement>
                 <se:AnchorPoint>
-                  <se:AnchorPointX>0</se:AnchorPointX>
+                  <se:AnchorPointX>0.5</se:AnchorPointX>
                   <se:AnchorPointY>0.5</se:AnchorPointY>
                 </se:AnchorPoint>
               </se:PointPlacement>
@@ -188,7 +185,6 @@
               </se:Mark>
               <se:Size>5</se:Size>
             </se:Graphic>
-            <se:VendorOption name="maxDisplacement">1</se:VendorOption>
             <se:VendorOption name="conflictResolution">false</se:VendorOption>
             <se:VendorOption name="graphic-resize">stretch</se:VendorOption>
             <se:VendorOption name="graphic-margin">5 3</se:VendorOption>
@@ -198,4 +194,3 @@
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
-

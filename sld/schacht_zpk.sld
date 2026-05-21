@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se">
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>saa_schacht_se</se:Name>
+    <se:Name>v_gde_verband_schacht</se:Name>
     <UserStyle>
-      <se:Name>saa_schacht_se</se:Name>
+      <se:Name>v_gde_verband_schacht</se:Name>
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>0 - 501</se:Name>
@@ -22,12 +22,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#a80000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#a80000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -62,12 +62,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#a80000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#a80000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -97,17 +97,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1001</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2001</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#a80000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#a80000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -142,12 +142,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ff0000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ff0000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -182,12 +182,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ff0000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ff0000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -217,17 +217,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1001</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2001</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ff0000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ff0000&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -262,12 +262,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffaa00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffaa00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -302,12 +302,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffaa00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffaa00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -337,17 +337,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1001</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2001</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffaa00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffaa00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -382,12 +382,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffd500&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffd500&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -422,12 +422,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffd500&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffd500&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -457,17 +457,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1001</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2001</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffd500&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#ffd500&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -502,12 +502,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#00ff00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#00ff00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -542,12 +542,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#00ff00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#00ff00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -577,17 +577,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1001</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2001</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#00ff00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#00ff00&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -622,12 +622,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#828282&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23828282&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#828282&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -662,12 +662,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#828282&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23828282&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#828282&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -697,17 +697,17 @@
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:MinScaleDenominator>1001</se:MinScaleDenominator>
-          <se:MaxScaleDenominator>2001</se:MaxScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
           <se:PointSymbolizer>
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#828282&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0?fill=%23828282&amp;fill-opacity=1&amp;outline=%23660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Normalschacht_fill.svg?fill=#828282&amp;fill-opacity=1&amp;outline=#660066&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->

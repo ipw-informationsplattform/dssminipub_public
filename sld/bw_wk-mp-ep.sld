@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.0" xmlns:se="http://www.opengis.net/se">
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" version="1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
   <NamedLayer>
-    <se:Name>paa_bw</se:Name>
+    <se:Name>v_gde_verband_bw</se:Name>
     <UserStyle>
-      <se:Name>paa_bw</se:Name>
+      <se:Name>v_gde_verband_bw</se:Name>
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>A_Entl</se:Name>
@@ -37,14 +37,16 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>stilid</ogc:PropertyName>
-                <ogc:Literal>A_MA</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>stilid</ogc:PropertyName>
-                <ogc:Literal>A_MA_dr</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>stilid</ogc:PropertyName>
+                  <ogc:Literal>A_MA</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>stilid</ogc:PropertyName>
+                  <ogc:Literal>A_MA_dr</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>stilid</ogc:PropertyName>
                 <ogc:Literal>A_MA_LE</ogc:Literal>
@@ -72,14 +74,16 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>stilid</ogc:PropertyName>
-                <ogc:Literal>A_RA</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>stilid</ogc:PropertyName>
-                <ogc:Literal>A_RA_dr</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>stilid</ogc:PropertyName>
+                  <ogc:Literal>A_RA</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>stilid</ogc:PropertyName>
+                  <ogc:Literal>A_RA_dr</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>stilid</ogc:PropertyName>
                 <ogc:Literal>A_RA_LE</ogc:Literal>
@@ -107,14 +111,16 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>stilid</ogc:PropertyName>
-                <ogc:Literal>A_SA</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>stilid</ogc:PropertyName>
-                <ogc:Literal>A_SA_dr</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>stilid</ogc:PropertyName>
+                  <ogc:Literal>A_SA</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>stilid</ogc:PropertyName>
+                  <ogc:Literal>A_SA_dr</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>stilid</ogc:PropertyName>
                 <ogc:Literal>A_SA_LE</ogc:Literal>
@@ -142,14 +148,16 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:Or>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>stilid</ogc:PropertyName>
-                <ogc:Literal>A_unbekannt</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
-              <ogc:PropertyIsEqualTo>
-                <ogc:PropertyName>stilid</ogc:PropertyName>
-                <ogc:Literal>A_unbekannt_dr</ogc:Literal>
-              </ogc:PropertyIsEqualTo>
+              <ogc:Or>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>stilid</ogc:PropertyName>
+                  <ogc:Literal>A_unbekannt</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+                <ogc:PropertyIsEqualTo>
+                  <ogc:PropertyName>stilid</ogc:PropertyName>
+                  <ogc:Literal>A_unbekannt_dr</ogc:Literal>
+                </ogc:PropertyIsEqualTo>
+              </ogc:Or>
               <ogc:PropertyIsEqualTo>
                 <ogc:PropertyName>stilid</ogc:PropertyName>
                 <ogc:Literal>A_unbekannt_LE</ogc:Literal>

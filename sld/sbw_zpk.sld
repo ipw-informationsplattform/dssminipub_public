@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:se="http://www.opengis.net/se">
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" xmlns:ogc="http://www.opengis.net/ogc" xmlns:se="http://www.opengis.net/se" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <se:Name>paa_sbw</se:Name>
+    <se:Name>v_gde_verband_sbw</se:Name>
     <UserStyle>
-      <se:Name>paa_sbw</se:Name>
+      <se:Name>v_gde_verband_sbw</se:Name>
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Regenueberlauf unbekannt</se:Name>
@@ -38,12 +38,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -90,12 +90,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -142,12 +142,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -198,12 +198,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -250,12 +250,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -302,12 +302,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -358,12 +358,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -410,12 +410,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -462,12 +462,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -518,12 +518,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -570,12 +570,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -622,12 +622,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -678,12 +678,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -730,12 +730,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -782,12 +782,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -838,12 +838,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -890,12 +890,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -942,12 +942,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenueberlauf_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -988,12 +988,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1034,12 +1034,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1080,12 +1080,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1126,12 +1126,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1172,12 +1172,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1218,12 +1218,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1264,12 +1264,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1310,12 +1310,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1356,12 +1356,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1402,12 +1402,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1448,12 +1448,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1494,12 +1494,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1540,12 +1540,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1586,12 +1586,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1632,12 +1632,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1678,12 +1678,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1724,12 +1724,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1770,12 +1770,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Regenbecken_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1822,12 +1822,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1874,12 +1874,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1926,12 +1926,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -1978,12 +1978,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2030,12 +2030,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2082,12 +2082,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2134,12 +2134,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23660066&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23660066&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2186,12 +2186,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23660066&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23660066&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2238,12 +2238,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23660066&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23660066&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2290,12 +2290,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2342,12 +2342,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2394,12 +2394,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2446,12 +2446,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2498,12 +2498,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2550,12 +2550,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2602,12 +2602,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2654,12 +2654,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2706,12 +2706,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Pumpwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2746,12 +2746,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2765,7 +2765,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>16</se:Size>
+              <se:Size>28</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -2786,12 +2786,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2805,7 +2805,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -2826,12 +2826,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2845,7 +2845,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>8</se:Size>
+              <se:Size>14</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -2866,12 +2866,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2885,7 +2885,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>16</se:Size>
+              <se:Size>28</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -2906,12 +2906,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2925,7 +2925,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -2946,12 +2946,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -2965,7 +2965,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>8</se:Size>
+              <se:Size>14</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -2986,12 +2986,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3005,7 +3005,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>16</se:Size>
+              <se:Size>28</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3026,12 +3026,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3045,7 +3045,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3066,12 +3066,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3085,7 +3085,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>8</se:Size>
+              <se:Size>14</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3106,12 +3106,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3125,7 +3125,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>16</se:Size>
+              <se:Size>28</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3146,12 +3146,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3165,7 +3165,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3186,12 +3186,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3205,7 +3205,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>8</se:Size>
+              <se:Size>14</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3226,12 +3226,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3245,7 +3245,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>16</se:Size>
+              <se:Size>28</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3266,12 +3266,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3285,7 +3285,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3306,12 +3306,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3325,7 +3325,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>8</se:Size>
+              <se:Size>14</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3346,12 +3346,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3365,7 +3365,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>16</se:Size>
+              <se:Size>28</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3386,12 +3386,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3405,7 +3405,7 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>12</se:Size>
+              <se:Size>20</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3426,12 +3426,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Duekeroberhaupt.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3445,7 +3445,727 @@
                   <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
                 </se:Stroke>
               </se:Mark>
-              <se:Size>8</se:Size>
+              <se:Size>14</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA unbekannt</se:Name>
+          <se:Description>
+            <se:Title>ARA unbekannt</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_unbekannt</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>10</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>501</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#828282</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>22</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA unbekannt</se:Name>
+          <se:Description>
+            <se:Title>ARA unbekannt</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_unbekannt</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#828282</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>15</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA unbekannt</se:Name>
+          <se:Description>
+            <se:Title>ARA unbekannt</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_unbekannt</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1001</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#828282</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>10</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z0</se:Name>
+          <se:Description>
+            <se:Title>ARA Z0</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z0</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>10</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>501</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#a80000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>22</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z0</se:Name>
+          <se:Description>
+            <se:Title>ARA Z0</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z0</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#a80000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>15</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z0</se:Name>
+          <se:Description>
+            <se:Title>ARA Z0</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z0</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1001</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#a80000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>10</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z1</se:Name>
+          <se:Description>
+            <se:Title>ARA Z1</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>10</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>501</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>22</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z1</se:Name>
+          <se:Description>
+            <se:Title>ARA Z1</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>15</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z1</se:Name>
+          <se:Description>
+            <se:Title>ARA Z1</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z1</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1001</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ff0000</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>10</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z2</se:Name>
+          <se:Description>
+            <se:Title>ARA Z2</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z2</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>10</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>501</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffaa00</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>22</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z2</se:Name>
+          <se:Description>
+            <se:Title>ARA Z2</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z2</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffaa00</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>15</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z2</se:Name>
+          <se:Description>
+            <se:Title>ARA Z2</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z2</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1001</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffaa00</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>10</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z3</se:Name>
+          <se:Description>
+            <se:Title>ARA Z3</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z3</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>10</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>501</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffd500</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>22</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z3</se:Name>
+          <se:Description>
+            <se:Title>ARA Z3</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z3</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffd500</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>15</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z3</se:Name>
+          <se:Description>
+            <se:Title>ARA Z3</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z3</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1001</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#ffd500</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>10</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z4</se:Name>
+          <se:Description>
+            <se:Title>ARA Z4</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z4</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>10</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>501</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#00ff00</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>22</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z4</se:Name>
+          <se:Description>
+            <se:Title>ARA Z4</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z4</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>501</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>1001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#00ff00</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>15</se:Size>
+            </se:Graphic>
+          </se:PointSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>ARA Z4</se:Name>
+          <se:Description>
+            <se:Title>ARA Z4</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>stilid</ogc:PropertyName>
+              <ogc:Literal>P_ARA_Z4</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:MinScaleDenominator>1001</se:MinScaleDenominator>
+          <se:MaxScaleDenominator>5001</se:MaxScaleDenominator>
+          <se:PointSymbolizer>
+            <se:Graphic>
+              <!--Parametric SVG-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Plain SVG fallback, no parameters-->
+              <se:ExternalGraphic>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/ARA_fill.svg"/>
+                <se:Format>image/svg+xml</se:Format>
+              </se:ExternalGraphic>
+              <!--Well known marker fallback-->
+              <se:Mark>
+                <se:WellKnownName>square</se:WellKnownName>
+                <se:Fill>
+                  <se:SvgParameter name="fill">#00ff00</se:SvgParameter>
+                </se:Fill>
+                <se:Stroke>
+                  <se:SvgParameter name="stroke">#232323</se:SvgParameter>
+                  <se:SvgParameter name="stroke-width">0.5</se:SvgParameter>
+                </se:Stroke>
+              </se:Mark>
+              <se:Size>10</se:Size>
             </se:Graphic>
           </se:PointSymbolizer>
         </se:Rule>
@@ -3478,12 +4198,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3530,12 +4250,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3582,12 +4302,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3634,12 +4354,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3686,12 +4406,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3738,12 +4458,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3790,12 +4510,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3842,12 +4562,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3894,12 +4614,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3946,12 +4666,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -3998,12 +4718,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4050,12 +4770,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4102,12 +4822,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4154,12 +4874,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4206,12 +4926,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4258,12 +4978,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4310,12 +5030,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4362,12 +5082,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Trennbauwerk_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4402,12 +5122,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4442,12 +5162,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4482,12 +5202,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4522,12 +5242,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4562,12 +5282,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4602,12 +5322,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4642,12 +5362,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4682,12 +5402,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4722,12 +5442,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4762,12 +5482,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4802,12 +5522,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4842,12 +5562,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4882,12 +5602,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4922,12 +5642,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -4962,12 +5682,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5002,12 +5722,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5042,12 +5762,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5082,12 +5802,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Einleitstelle.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5134,12 +5854,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5186,12 +5906,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5238,12 +5958,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5290,12 +6010,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5342,12 +6062,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5394,12 +6114,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5446,12 +6166,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5498,12 +6218,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5550,12 +6270,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5602,12 +6322,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5654,12 +6374,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5706,12 +6426,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5758,12 +6478,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5810,12 +6530,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5862,12 +6582,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5914,12 +6634,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -5966,12 +6686,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6018,12 +6738,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Autonome_Messstelle_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6070,12 +6790,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6122,12 +6842,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6174,12 +6894,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6226,12 +6946,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6278,12 +6998,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6330,12 +7050,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6382,12 +7102,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6434,12 +7154,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6486,12 +7206,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6538,12 +7258,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6590,12 +7310,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6642,12 +7362,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6694,12 +7414,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6746,12 +7466,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6798,12 +7518,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6850,12 +7570,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6902,12 +7622,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -6954,12 +7674,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Versickerungsanlage_fill.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7006,12 +7726,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7058,12 +7778,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7110,12 +7830,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23828282&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7162,12 +7882,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7214,12 +7934,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7266,12 +7986,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23a80000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7318,12 +8038,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7370,12 +8090,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7422,12 +8142,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ff0000&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7474,12 +8194,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7526,12 +8246,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7578,12 +8298,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffaa00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7630,12 +8350,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7682,12 +8402,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7734,12 +8454,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%23ffd500&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7786,12 +8506,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7838,12 +8558,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
@@ -7890,12 +8610,12 @@
             <se:Graphic>
               <!--Parametric SVG-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg?fill=%2300ff00&amp;fill-opacity=1&amp;outline=%23232323&amp;outline-opacity=1&amp;outline-width=0"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Plain SVG fallback, no parameters-->
               <se:ExternalGraphic>
-                <se:OnlineResource xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg" xlink:type="simple"/>
+                <se:OnlineResource xlink:type="simple" xlink:href="https://geo.lawis.softec.ch/svg/v2/Uebrige_Sonderbauwerke.svg"/>
                 <se:Format>image/svg+xml</se:Format>
               </se:ExternalGraphic>
               <!--Well known marker fallback-->
