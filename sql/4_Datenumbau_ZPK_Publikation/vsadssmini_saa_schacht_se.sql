@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Zustandsplan Kanalisation
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_ZPK_Publikation_20230228
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_ZPK_Publikation_20231027
  * Inhalt:                SAA Schächte SE
  * Script:                vsadssmini_saa_schacht_se.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,10 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.7.0                  (she) Ergänzung von DISTINCT bei INSERT, Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.1                  (she) Ergänzung zusätzlicher Filter nach Funktion bei Zuweisung Stil-Id (bug)
+ * 0.8.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 0.9.0                  (she) Schärfere Abgrenzung Drainageknoten
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +25,7 @@ schaechte AS (
 
   SELECT
     k.t_ili_tid AS oid_dss,
+    k.t_datasetname as dataset,
     REPLACE(k.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     REPLACE(k.nutzungsart_geplant, '_', ' ') AS nutzungsart_geplant,
     CASE
@@ -60,19 +65,24 @@ schaechte AS (
     k.sohlenkote,
     k.zustandserhebung_jahr,
     l.funktionhydraulisch AS leitung_funktionhydraulisch,
+    l.funktionhierarchisch AS leitung_funktionhierarchisch,
+    l.nutzungsart_ist AS leitung_nutzungsart_ist,
     eig.organisationstyp AS eigentuemer_organisationstyp,
     eig.bezeichnung AS eigentuemer_bezeichnung,
     betr.organisationstyp AS betreiber_organisationstyp,
     betr.bezeichnung AS betreiber_bezeichnung,
     CASE
-      WHEN k.baulicherzustand IN ('Z0','Z1','Z2','Z3','Z4','unbekannt') THEN
+      WHEN k.funktion IN ('Abflusslose_Toilette','abflussloseGrube','Absturzbauwerk','Abwasserfaulraum','Duekerkammer','Einlaufschacht','Faulgrube', 'Geleiseschacht','Geschiebefang','Guellegrube','Havariebecken','Klaergrube','Kombischacht','Kontroll_Einsteigschacht','Schlammsammler') THEN
         CASE
-          WHEN k.baulicherzustand = 'Z0' THEN 'P_Zustand_Z0'
-          WHEN k.baulicherzustand = 'Z1' THEN 'P_Zustand_Z1'
-          WHEN k.baulicherzustand = 'Z2' THEN 'P_Zustand_Z2'
-          WHEN k.baulicherzustand = 'Z3' THEN 'P_Zustand_Z3'
-          WHEN k.baulicherzustand = 'Z4' THEN 'P_Zustand_Z4'
-          WHEN k.baulicherzustand = 'unbekannt' THEN 'P_Zustand_unbekannt'
+          WHEN k.baulicherzustand IN ('Z0','Z1','Z2','Z3','Z4','unbekannt') THEN
+            CASE
+              WHEN k.baulicherzustand = 'Z0' THEN 'P_Zustand_Z0'
+              WHEN k.baulicherzustand = 'Z1' THEN 'P_Zustand_Z1'
+              WHEN k.baulicherzustand = 'Z2' THEN 'P_Zustand_Z2'
+              WHEN k.baulicherzustand = 'Z3' THEN 'P_Zustand_Z3'
+              WHEN k.baulicherzustand = 'Z4' THEN 'P_Zustand_Z4'
+              WHEN k.baulicherzustand = 'unbekannt' THEN 'P_Zustand_unbekannt'
+            END
         END
     END AS stilid
   FROM vsadssmini.vsadssmini_knoten k
@@ -82,7 +92,7 @@ schaechte AS (
   WHERE k.lage IS NOT NULL
 )
 
-INSERT INTO se_zpk_pub.saa_schacht_se (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, deckelkote, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktion, funktionhierarchisch, lage, nutzungsart_ist, nutzungsart_geplant, oid_dss, sohlenkote, astatus, stilid, zustandserhebung_jahr)
+INSERT INTO se_zpk_pub.saa_schacht_se (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, deckelkote, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktion, funktionhierarchisch, lage, nutzungsart_ist, nutzungsart_geplant, oid_dss, sohlenkote, astatus, dataset, stilid, zustandserhebung_jahr)
   SELECT DISTINCT
     baujahr,
     baulicherzustand,
@@ -101,11 +111,19 @@ INSERT INTO se_zpk_pub.saa_schacht_se (baujahr, baulicherzustand, betreiber_beze
     oid_dss,
     sohlenkote,
     astatus,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM schaechte
   WHERE astatus LIKE 'in_Betrieb%'
   AND funktionhierarchisch = 'SAA'
-  AND (leitung_funktionhydraulisch NOT IN ('Drainagetransportleitung', 'Sickerleitung')
-    OR leitung_funktionhydraulisch IS NULL)
-  AND stilid IS NOT NULL;
+  AND (
+    NOT (
+      leitung_funktionhierarchisch LIKE 'SAA.andere'
+      AND leitung_funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung', 'Pumpendruckleitung')
+      AND leitung_nutzungsart_ist LIKE 'Reinabwasser'
+    )
+    OR leitung_funktionhydraulisch IS NULL
+  )
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

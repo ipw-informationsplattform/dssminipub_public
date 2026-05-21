@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Werkkataster Ist
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20231027 
  * Inhalt:                SAA Schächte Drainage
  * Script:                vsadssmini_saa_schacht_dr.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,10 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.7.0                  (she) Ergänzungen bei INSERT, Formatierung INSERT, Anpassung Zielmodell
+ * 0.8.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 0.9.0                  (she) Schärfere Abgrenzung Drainageknoten
+ * 0.10.0                 (she) Einführung Stil 'P_Drainage'
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +25,7 @@ schaechte AS (
 
   SELECT
     k.t_ili_tid AS oid_dss,
+    k.t_datasetname as dataset,
     REPLACE(k.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     REPLACE(k.nutzungsart_geplant, '_', ' ') AS nutzungsart_geplant,
     CASE
@@ -60,15 +65,13 @@ schaechte AS (
     k.sohlenkote,
     k.zustandserhebung_jahr,
     l.funktionhydraulisch AS leitung_funktionhydraulisch,
+    l.funktionhierarchisch AS leitung_funktionhierarchisch,
+    l.nutzungsart_ist AS leitung_nutzungsart_ist,
     eig.organisationstyp AS eigentuemer_organisationstyp,
     eig.bezeichnung AS eigentuemer_bezeichnung,
     betr.organisationstyp AS betreiber_organisationstyp,
     betr.bezeichnung AS betreiber_bezeichnung,
-    CASE
-      WHEN k.finanzierung = 'oeffentlich' AND k.nutzungsart_ist = 'Reinabwasser' THEN 'P_RA'
-      WHEN k.finanzierung != 'oeffentlich' AND eig.organisationstyp = 'Privat' AND k.nutzungsart_ist = 'Reinabwasser' THEN 'P_RA_LE'
-      WHEN k.finanzierung != 'oeffentlich' AND eig.organisationstyp != 'Privat' AND k.nutzungsart_ist = 'Reinabwasser' THEN 'P_RA_dr'
-    END AS stilid
+    'P_Drainage' AS stilid
   FROM vsadssmini.vsadssmini_knoten k
   LEFT JOIN vsadssmini.vsadssmini_leitung l ON l.knoten_vonref = k.t_id
   LEFT JOIN vsadssmini.administration_organisation eig ON k.eigentuemerref = eig.t_id
@@ -76,7 +79,7 @@ schaechte AS (
   WHERE k.lage IS NOT NULL
 )
 
-INSERT INTO se_wk_pub.saa_schacht_dr (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, deckelkote, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktion, funktionhierarchisch, lage, nutzungsart_ist, nutzungsart_geplant, oid_dss, sohlenkote, astatus, stilid, zustandserhebung_jahr)
+INSERT INTO se_wk_pub.saa_schacht_dr (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, deckelkote, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktion, funktionhierarchisch, lage, nutzungsart_ist, nutzungsart_geplant, oid_dss, sohlenkote, astatus, dataset, stilid, zustandserhebung_jahr)
   SELECT DISTINCT
     baujahr,
     baulicherzustand,
@@ -95,12 +98,16 @@ INSERT INTO se_wk_pub.saa_schacht_dr (baujahr, baulicherzustand, betreiber_bezei
     oid_dss,
     sohlenkote,
     astatus,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM schaechte
   WHERE astatus LIKE 'in_Betrieb%'
   AND funktionhierarchisch = 'SAA'
-  AND leitung_funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung')
+  AND leitung_funktionhierarchisch LIKE 'SAA.andere'
+  AND leitung_funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung', 'Pumpendruckleitung')
+  AND leitung_nutzungsart_ist LIKE 'Reinabwasser'
   AND oid_dss NOT IN (SELECT oid_dss FROM se_wk_pub.saa_schacht_se)
   AND oid_dss NOT IN (SELECT oid_dss FROM se_wk_pub.saa_sbw)
-  AND stilid IS NOT NULL;
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

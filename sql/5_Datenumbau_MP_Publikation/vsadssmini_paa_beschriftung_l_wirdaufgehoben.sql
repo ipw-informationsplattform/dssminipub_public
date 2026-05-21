@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Massnahmenplan
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20230228
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20231027
  * Inhalt:                PAA Beschriftung Linienobjekte, Status 'wird aufgehoben'
  * Script:                vsadssmini_paa_beschriftung_l_wirdaufgehoben.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,8 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +23,7 @@ beschriftung_l AS (
 
   SELECT 
     l.t_ili_tid as aref,
+    l.t_datasetname as dataset,
     l.astatus,
     l.funktionhierarchisch,
     CASE
@@ -73,7 +76,7 @@ beschriftung_l AS (
   WHERE lt.textpos IS NOT NULL AND lt.plantyp = 'Werkplan' AND l.verlauf IS NOT NULL
 )
 
-INSERT INTO se_mp_pub.paa_beschriftung_l (textinhalt, textpos, textori, texthali, textvali, aref, stilid)
+INSERT INTO se_mp_pub.paa_beschriftung_l (textinhalt, textpos, textori, texthali, textvali, aref, dataset, stilid)
   SELECT
     textinhalt,
     textpos,
@@ -81,9 +84,11 @@ INSERT INTO se_mp_pub.paa_beschriftung_l (textinhalt, textpos, textori, texthali
     texthali,
     textvali,
     aref,
+    dataset,
     stilid
   FROM beschriftung_l
   WHERE astatus = 'in_Betrieb.wird_aufgehoben'
   AND textinhalt IS NOT NULL
   AND funktionhierarchisch LIKE 'PAA.%'
-  AND stilid IS NOT NULL;
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

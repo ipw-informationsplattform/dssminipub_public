@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Werkkataster Ist
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20231027 
  * Inhalt:                SAA Leitungen Drainage
  * Script:                vsadssmini_saa_leitung_dr.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,10 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 0.8.0                  (she) Schärfere Abgrenzung Drainageleitung
+ * 0.9.0                  (she) Unterscheidung Sicker- und Transportleitung ('L_Drainage_S', 'L_Drainage_T'
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +25,7 @@ leitungen AS (
 
   SELECT
     l.t_ili_tid as oid_dss,
+    l.t_datasetname as dataset,
     REPLACE(l.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     REPLACE(l.nutzungsart_geplant, '_', ' ') AS nutzungsart_geplant,
     l.funktionhierarchisch,
@@ -71,7 +76,8 @@ leitungen AS (
     eig.organisationstyp AS eigentuemer_organisationstyp,
     eig.bezeichnung AS eigentuemer_bezeichnung,
     CASE
-      WHEN l.funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung') THEN 'L_Drainage'
+      WHEN l.funktionhydraulisch IN ('Drainagetransportleitung', 'Pumpendruckleitung') THEN 'L_Drainage_T'
+      WHEN l.funktionhydraulisch = 'Sickerleitung' THEN 'L_Drainage_S'
     END AS stilid
   FROM
     vsadssmini.vsadssmini_leitung l
@@ -80,7 +86,7 @@ leitungen AS (
     l.verlauf IS NOT NULL 
 )
 
-INSERT INTO se_wk_pub.saa_leitung_dr (baujahr, baulicherzustand, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, funktionhydraulisch, laengeeffektiv, lagebestimmung, leckschutz, lichte_breite, lichte_hoehe, material, nutzungsart_geplant, nutzungsart_ist, oid_dss, profiltyp, reliner_art, astatus, verlauf, stilid, zustandserhebung_jahr)
+INSERT INTO se_wk_pub.saa_leitung_dr (baujahr, baulicherzustand, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, funktionhydraulisch, laengeeffektiv, lagebestimmung, leckschutz, lichte_breite, lichte_hoehe, material, nutzungsart_geplant, nutzungsart_ist, oid_dss, profiltyp, reliner_art, astatus, verlauf, dataset, stilid, zustandserhebung_jahr)
   SELECT
     baujahr,
     baulicherzustand,
@@ -103,10 +109,13 @@ INSERT INTO se_wk_pub.saa_leitung_dr (baujahr, baulicherzustand, bezeichnung, ei
     reliner_art,
     astatus,
     verlauf,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM leitungen
   WHERE astatus LIKE 'in_Betrieb%'
-  AND funktionhierarchisch LIKE 'SAA.%'
-  AND funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung')
-  AND stilid IS NOT NULL;
+  AND funktionhierarchisch LIKE 'SAA.andere'
+  AND funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung', 'Pumpendruckleitung')
+  AND nutzungsart_ist LIKE 'Reinabwasser'
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

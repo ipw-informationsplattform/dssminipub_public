@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Massnahmenplan
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20230228
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20231027
  * Inhalt:                PAA Leitungen SE, Status 'projektiert'
  * Script:                vsadssmini_paa_leitung_se_projektiert.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,10 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 0.8.0                  (she) Ergänzung Stil 'L_Entl_dr_proj'
+ * 0.9.0                  (she) Ausschluss Drainage
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +25,7 @@ leitungen AS (
 
   SELECT
     l.t_ili_tid as oid_dss,
+    l.t_datasetname as dataset,
     REPLACE(l.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     REPLACE(l.nutzungsart_geplant, '_', ' ') AS nutzungsart_geplant,
     l.funktionhierarchisch,
@@ -113,7 +118,8 @@ leitungen AS (
               WHEN l.nutzungsart_geplant = 'Mischabwasser' THEN 'L_MA_dr_proj'
               WHEN l.nutzungsart_geplant IN ('Schmutzabwasser','Industrieabwasser') THEN 'L_SA_dr_proj'
               WHEN l.nutzungsart_geplant IN ('Reinabwasser','Niederschlagsabwasser') THEN 'L_RA_dr_proj'
-              WHEN l.nutzungsart_geplant IN ('andere','unbekannt','entlastetes_Mischabwasser') THEN 'L_unbekannt_dr_proj'
+              WHEN l.nutzungsart_geplant = 'entlastetes_Mischabwasser' THEN 'L_Entl_dr_proj'
+              WHEN l.nutzungsart_geplant IN ('andere','unbekannt') THEN 'L_unbekannt_dr_proj'
             END
         END
     END AS stilid
@@ -124,7 +130,7 @@ leitungen AS (
     l.verlauf IS NOT NULL 
 )
 
-INSERT INTO se_mp_pub.paa_leitung_se (baujahr, baulicherzustand, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, funktionhydraulisch, laengeeffektiv, lagebestimmung, leckschutz, lichte_breite, lichte_hoehe, material, nutzungsart_ist, nutzungsart_geplant, oid_dss, profiltyp, reliner_art, astatus, verlauf, stilid, zustandserhebung_jahr)
+INSERT INTO se_mp_pub.paa_leitung_se (baujahr, baulicherzustand, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, funktionhydraulisch, laengeeffektiv, lagebestimmung, leckschutz, lichte_breite, lichte_hoehe, material, nutzungsart_ist, nutzungsart_geplant, oid_dss, profiltyp, reliner_art, astatus, verlauf, dataset, stilid, zustandserhebung_jahr)
   SELECT
     baujahr,
     baulicherzustand,
@@ -147,9 +153,15 @@ INSERT INTO se_mp_pub.paa_leitung_se (baujahr, baulicherzustand, bezeichnung, ei
     reliner_art,
     astatus,
     verlauf,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM leitungen
   WHERE astatus IN ('weitere.geplant', 'weitere.Projekt')
-  AND funktionhierarchisch LIKE 'PAA.%'
-  AND stilid IS NOT NULL;
+  AND NOT (
+    funktionhierarchisch LIKE 'SAA.andere'
+    AND funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung', 'Pumpendruckleitung')
+    AND nutzungsart_ist LIKE 'Reinabwasser'
+  )
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

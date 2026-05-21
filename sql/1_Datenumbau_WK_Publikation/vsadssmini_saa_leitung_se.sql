@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Werkkataster Ist
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20231027 
  * Inhalt:                SAA Leitungen SE
  * Script:                vsadssmini_saa_leitung_se.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,11 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 0.8.0                  (she) Schärfere Abgrenzung Drainageleitung
+ * 0.9.0                  (she) Ergänzung Stil 'L_Entl_dr'
+ * 0.10.0                 (she) Ergänzung Stil 'L_Drainage_S'
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +26,7 @@ leitungen AS (
 
   SELECT
     l.t_ili_tid as oid_dss,
+    l.t_datasetname as dataset,
     REPLACE(l.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     REPLACE(l.nutzungsart_geplant, '_', ' ') AS nutzungsart_geplant,
     l.funktionhierarchisch,
@@ -73,7 +79,7 @@ leitungen AS (
     CASE
       WHEN l.nutzungsart_ist = 'Bachwasser' AND profiltyp != 'offenes_Profil' THEN 'L_eindol'
       WHEN l.funktionhydraulisch IN ('Pumpendruckleitung','Vakuumleitung') THEN 'L_PD'
-      WHEN l.funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung') THEN 'L_Drainage'
+      WHEN l.funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung') THEN 'L_Drainage_S'
       ELSE
         CASE 
           WHEN l.finanzierung = 'oeffentlich' THEN
@@ -96,7 +102,8 @@ leitungen AS (
               WHEN l.nutzungsart_ist = 'Mischabwasser' THEN 'L_MA_dr'
               WHEN l.nutzungsart_ist IN ('Schmutzabwasser','Industrieabwasser') THEN 'L_SA_dr'
               WHEN l.nutzungsart_ist IN ('Reinabwasser','Niederschlagsabwasser') THEN 'L_RA_dr'
-              WHEN l.nutzungsart_ist IN ('andere','unbekannt','entlastetes_Mischabwasser') THEN 'L_unbekannt_dr'
+              WHEN l.nutzungsart_ist = 'entlastetes_Mischabwasser' THEN 'L_Entl_dr'
+              WHEN l.nutzungsart_ist IN ('andere','unbekannt') THEN 'L_unbekannt_dr'
             END
         END
     END AS stilid
@@ -107,7 +114,7 @@ leitungen AS (
     l.verlauf IS NOT NULL 
 )
 
-INSERT INTO se_wk_pub.saa_leitung_se (baujahr, baulicherzustand, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, funktionhydraulisch, laengeeffektiv, lagebestimmung, leckschutz, lichte_breite, lichte_hoehe, material, nutzungsart_geplant, nutzungsart_ist, oid_dss, profiltyp, reliner_art, astatus, verlauf, stilid, zustandserhebung_jahr)
+INSERT INTO se_wk_pub.saa_leitung_se (baujahr, baulicherzustand, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, funktionhydraulisch, laengeeffektiv, lagebestimmung, leckschutz, lichte_breite, lichte_hoehe, material, nutzungsart_geplant, nutzungsart_ist, oid_dss, profiltyp, reliner_art, astatus, verlauf, dataset, stilid, zustandserhebung_jahr)
   SELECT
     baujahr,
     baulicherzustand,
@@ -130,10 +137,16 @@ INSERT INTO se_wk_pub.saa_leitung_se (baujahr, baulicherzustand, bezeichnung, ei
     reliner_art,
     astatus,
     verlauf,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM leitungen
   WHERE astatus LIKE 'in_Betrieb%'
   AND funktionhierarchisch LIKE 'SAA.%'
-  AND funktionhydraulisch NOT IN ('Drainagetransportleitung', 'Sickerleitung')
-  AND stilid IS NOT NULL;
+  AND NOT (
+    funktionhierarchisch LIKE 'SAA.andere'
+    AND funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung', 'Pumpendruckleitung')
+    AND nutzungsart_ist LIKE 'Reinabwasser'
+  )
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

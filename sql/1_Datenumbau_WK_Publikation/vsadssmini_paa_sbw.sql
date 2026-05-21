@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Werkkataster Ist
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20231027 
  * Inhalt:                PAA Sonderbauwerke
  * Script:                vsadssmini_paa_sbw.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,8 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +23,7 @@ sbw AS (
 
   SELECT
     k.t_ili_tid as oid_dss,
+    k.t_datasetname as dataset,
     CASE
       WHEN k.funktion = 'Abflusslose_Toilette' THEN 'Abflusslose Toilette'
       WHEN k.funktion = 'abflussloseGrube' THEN 'Abflusslose Grube'
@@ -80,7 +83,7 @@ sbw AS (
   WHERE k.lage IS NOT NULL
 )
 
-INSERT INTO se_wk_pub.paa_sbw (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, funktion, funktionhierarchisch, lage, oid_dss, astatus, stilid, zustandserhebung_jahr)
+INSERT INTO se_wk_pub.paa_sbw (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, funktion, funktionhierarchisch, lage, oid_dss, astatus, dataset, stilid, zustandserhebung_jahr)
   SELECT
     baujahr,
     baulicherzustand,
@@ -94,9 +97,11 @@ INSERT INTO se_wk_pub.paa_sbw (baujahr, baulicherzustand, betreiber_bezeichnung,
     lage,
     oid_dss,
     astatus,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM sbw
   WHERE astatus LIKE 'in_Betrieb%'
   AND funktionhierarchisch = 'PAA'
-  AND stilid IS NOT NULL;
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;
