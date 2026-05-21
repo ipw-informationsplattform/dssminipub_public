@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Massnahmenplan
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20230228
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20231027
  * Inhalt:                Massnahmen Linienobjekte
  * Script:                vsadssmini_massnahmen_massnahme_l.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,9 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
+ * 1.1.0                  (she) Ergänzung OID_DSS
  */
 
 WITH
@@ -20,6 +23,8 @@ WITH
 massnahme_l AS (
 
   SELECT
+    m.t_datasetname as dataset,
+    m.t_ili_tid as oid_dss,
     m.linie,
     CASE
       WHEN m.astatus <> 'erledigt' AND m.astatus <> 'sistiert' THEN 'L_Mn'
@@ -29,9 +34,12 @@ massnahme_l AS (
 
 )
 
-INSERT INTO se_mp_pub.massnahmen_massnahme_l (linie, stilid)
+INSERT INTO se_mp_pub.massnahmen_massnahme_l (linie, dataset, oid_dss, stilid)
   SELECT
     linie,
+    dataset,
+    oid_dss,
     stilid
   FROM massnahme_l
-  WHERE stilid IS NOT NULL;
+  WHERE stilid IS NOT NULL
+  AND dataset LIKE :dset;

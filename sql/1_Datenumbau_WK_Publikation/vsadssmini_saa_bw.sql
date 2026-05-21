@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Werkkataster Ist
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20231027 
  * Inhalt:                SAA Bauwerksflächen
  * Script:                vsadssmini_saa_bw.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,8 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +23,7 @@ bw AS (
 
   SELECT
     k.t_ili_tid as oid_dss,
+    k.t_datasetname as dataset,
     REPLACE(k.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     k.detailgeometrie,
     k.funktionhierarchisch,
@@ -57,7 +60,7 @@ bw AS (
   WHERE detailgeometrie IS NOT NULL
 )
 
-INSERT INTO se_wk_pub.saa_bw (eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, nutzungsart_ist, detailgeometrie, oid_dss, astatus, stilid)
+INSERT INTO se_wk_pub.saa_bw (eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, nutzungsart_ist, detailgeometrie, oid_dss, astatus, dataset, stilid)
   SELECT
     eigentuemer_organisationstyp,
     finanzierung,
@@ -66,8 +69,10 @@ INSERT INTO se_wk_pub.saa_bw (eigentuemer_organisationstyp, finanzierung, funkti
     detailgeometrie,
     oid_dss,
     astatus,
+    dataset,
     stilid
   FROM bw
   WHERE astatus LIKE 'in_Betrieb%'
   AND funktionhierarchisch = 'SAA'
-  AND stilid IS NOT NULL;
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

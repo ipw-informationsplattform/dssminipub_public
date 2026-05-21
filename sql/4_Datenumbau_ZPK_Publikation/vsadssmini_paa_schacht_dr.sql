@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Zustandsplan Kanalisation
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_ZPK_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_ZPK_Publikation_20231027
  * Inhalt:                PAA Schächte Drainage
  * Script:                vsadssmini_paa_schacht_dr.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,8 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.7.0                  (she) Ergänzungen bei INSERT, Formatierung INSERT, Anpassung Zielmodell
+ * 0.8.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +23,7 @@ schaechte AS (
 
   SELECT
     k.t_ili_tid AS oid_dss,
+    k.t_datasetname as dataset,
     REPLACE(k.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     REPLACE(k.nutzungsart_geplant, '_', ' ') AS nutzungsart_geplant,
     CASE
@@ -82,7 +85,7 @@ schaechte AS (
   WHERE k.lage IS NOT NULL
 )
 
-INSERT INTO se_zpk_pub.paa_schacht_dr (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, deckelkote, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktion, funktionhierarchisch, lage, nutzungsart_ist, nutzungsart_geplant, oid_dss, sohlenkote, astatus, stilid, zustandserhebung_jahr)
+INSERT INTO se_zpk_pub.paa_schacht_dr (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, deckelkote, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktion, funktionhierarchisch, lage, nutzungsart_ist, nutzungsart_geplant, oid_dss, sohlenkote, astatus, dataset, stilid, zustandserhebung_jahr)
   SELECT DISTINCT
     baujahr,
     baulicherzustand,
@@ -101,6 +104,7 @@ INSERT INTO se_zpk_pub.paa_schacht_dr (baujahr, baulicherzustand, betreiber_beze
     oid_dss,
     sohlenkote,
     astatus,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM schaechte
@@ -109,4 +113,5 @@ INSERT INTO se_zpk_pub.paa_schacht_dr (baujahr, baulicherzustand, betreiber_beze
   AND leitung_funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung')
   AND oid_dss NOT IN (SELECT oid_dss FROM se_zpk_pub.paa_schacht_se)
   AND oid_dss NOT IN (SELECT oid_dss FROM se_zpk_pub.paa_sbw)
-  AND stilid IS NOT NULL;
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

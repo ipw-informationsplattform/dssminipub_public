@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Werkkataster Ist
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_WK_Publikation_20231027 
  * Inhalt:                PAA Beschriftung Punktobjekte
  * Script:                vsadssmini_paa_beschriftung_p.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,8 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.7.0                  (she) Ergänzung von DISTINCT bei INSERT, Formatierung INSERT, Anpassung Zielmodell
+ * 0.8.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +23,7 @@ beschriftung_p AS (
 
   SELECT 
     k.t_ili_tid as aref,
+    k.t_datasetname as dataset,
     k.astatus,
     k.funktionhierarchisch,
     k.bezeichnung AS textinhalt,
@@ -71,7 +74,7 @@ beschriftung_p AS (
 
 )
 
-INSERT INTO se_wk_pub.paa_beschriftung_p (textinhalt, textpos, textori, texthali, textvali, aref, stilid)
+INSERT INTO se_wk_pub.paa_beschriftung_p (textinhalt, textpos, textori, texthali, textvali, aref, dataset, stilid)
   SELECT DISTINCT
     textinhalt,
     textpos,
@@ -79,6 +82,7 @@ INSERT INTO se_wk_pub.paa_beschriftung_p (textinhalt, textpos, textori, texthali
     texthali,
     textvali,
     aref,
+    dataset,
     stilid
   FROM beschriftung_p
   WHERE astatus LIKE 'in_Betrieb%'
@@ -86,4 +90,5 @@ INSERT INTO se_wk_pub.paa_beschriftung_p (textinhalt, textpos, textori, texthali
   AND textinhalt IS NOT NULL
   AND (leitung_funktionhydraulisch NOT IN ('Drainagetransportleitung', 'Sickerleitung')
     OR leitung_funktionhydraulisch IS NULL)
-  AND stilid IS NOT NULL;
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

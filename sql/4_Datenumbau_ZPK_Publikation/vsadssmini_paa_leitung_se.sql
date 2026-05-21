@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Zustandsplan Kanalisation
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_ZPK_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_ZPK_Publikation_20231027
  * Inhalt:                PAA Leitungen SE
  * Script:                vsadssmini_paa_leitung_se.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,8 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +23,7 @@ leitungen AS (
 
   SELECT
     l.t_ili_tid as oid_dss,
+    l.t_datasetname as dataset,
     REPLACE(l.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     REPLACE(l.nutzungsart_geplant, '_', ' ') AS nutzungsart_geplant,
     l.funktionhierarchisch,
@@ -112,7 +115,7 @@ leitungen AS (
     l.verlauf IS NOT NULL 
 )
 
-INSERT INTO se_zpk_pub.paa_leitung_se (baujahr, baulicherzustand, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, funktionhydraulisch, laengeeffektiv, lagebestimmung, leckschutz, lichte_breite, lichte_hoehe, material, nutzungsart_geplant, nutzungsart_ist, oid_dss, profiltyp, reliner_art, astatus, verlauf, stilid, zustandserhebung_jahr)
+INSERT INTO se_zpk_pub.paa_leitung_se (baujahr, baulicherzustand, bezeichnung, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktionhierarchisch, funktionhydraulisch, laengeeffektiv, lagebestimmung, leckschutz, lichte_breite, lichte_hoehe, material, nutzungsart_geplant, nutzungsart_ist, oid_dss, profiltyp, reliner_art, astatus, verlauf, dataset, stilid, zustandserhebung_jahr)
   SELECT
     baujahr,
     baulicherzustand,
@@ -135,10 +138,12 @@ INSERT INTO se_zpk_pub.paa_leitung_se (baujahr, baulicherzustand, bezeichnung, e
     reliner_art,
     astatus,
     verlauf,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM leitungen
   WHERE astatus LIKE 'in_Betrieb%'
   AND funktionhierarchisch LIKE 'PAA.%'
   AND funktionhydraulisch NOT IN ('Drainagetransportleitung', 'Sickerleitung')
-  AND stilid IS NOT NULL;
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

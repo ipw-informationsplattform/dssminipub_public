@@ -1,7 +1,8 @@
 $V_TOOL = 'C:\Program Files\PostgreSQL\12\bin\psql.exe'
+$V_DATASET = '242' # BFS-Nr. von Birmensdorf ZH
 
 # etl data to wk pub
-Start-Process -FilePath $V_TOOL -ArgumentList "-h localhost -p 5432 -U postgres -d ipw_gep_test -a",
+Start-Process -FilePath $V_TOOL -ArgumentList "-h localhost -p 5432 -U postgres -d ipw_gep_test -a -v dset='$V_DATASET'",
 
 # wichtig: Encoding muss überein stimmen mit dem Encoding der SQL-Files (Umlaute, Sonderzeichen wie Promille ‰)
 '-c "\encoding UTF8"',
@@ -23,6 +24,8 @@ Start-Process -FilePath $V_TOOL -ArgumentList "-h localhost -p 5432 -U postgres 
 "-f .\sql\1_Datenumbau_WK_Publikation\vsadssmini_saa_schacht_dr.sql",
 "-f .\sql\1_Datenumbau_WK_Publikation\vsadssmini_mangel_knoten.sql",
 "-f .\sql\1_Datenumbau_WK_Publikation\vsadssmini_mangel_leitung.sql",
+# add views for wk (v2)
+"-f .\sql\1_Datenumbau_WK_Publikation\views_wk_pub.sql",
 
 # etl data to ep pub
 "-f .\sql\2_Datenumbau_EP_Publikation/initialisierung.sql",
@@ -50,6 +53,8 @@ Start-Process -FilePath $V_TOOL -ArgumentList "-h localhost -p 5432 -U postgres 
 "-f .\sql\2_Datenumbau_EP_Publikation/vsadssmini_mangel_knoten.sql",
 "-f .\sql\2_Datenumbau_EP_Publikation/vsadssmini_mangel_leitung.sql",
 "-f .\sql\2_Datenumbau_EP_Publikation/vsadssmini_mangel_tezg.sql",
+# add views for ep (v2)
+"-f .\sql\2_Datenumbau_EP_Publikation/views_ep_pub.sql",
 
 # etl data to tezg pub
 "-f .\sql\3_Datenumbau_TEZG_Publikation/initialisierung.sql",
@@ -57,6 +62,8 @@ Start-Process -FilePath $V_TOOL -ArgumentList "-h localhost -p 5432 -U postgres 
 "-f .\sql\3_Datenumbau_TEZG_Publikation/vsadssmini_tezg_oekan.sql",
 "-f .\sql\3_Datenumbau_TEZG_Publikation/vsadssmini_tezg_tezg_ist.sql",
 "-f .\sql\3_Datenumbau_TEZG_Publikation/vsadssmini_mangel_tezg.sql",
+# add views for tezg (v2)
+"-f .\sql\3_Datenumbau_TEZG_Publikation/views_tezg_pub.sql",
 
 # etl data to zpk pub
 "-f .\sql\4_Datenumbau_ZPK_Publikation/initialisierung.sql",
@@ -75,6 +82,8 @@ Start-Process -FilePath $V_TOOL -ArgumentList "-h localhost -p 5432 -U postgres 
 "-f .\sql\4_Datenumbau_ZPK_Publikation/vsadssmini_tezg_oekan.sql",
 "-f .\sql\4_Datenumbau_ZPK_Publikation/vsadssmini_mangel_knoten.sql",
 "-f .\sql\4_Datenumbau_ZPK_Publikation/vsadssmini_mangel_leitung.sql",
+# add views for zpk (v2)
+"-f .\sql\4_Datenumbau_ZPK_Publikation/views_zpk_pub.sql",
 
 # etl data to mp pub
 "-f .\sql\5_Datenumbau_MP_Publikation/initialisierung.sql",
@@ -97,9 +106,10 @@ Start-Process -FilePath $V_TOOL -ArgumentList "-h localhost -p 5432 -U postgres 
 "-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_paa_schacht_se_inbetrieb.sql",
 "-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_paa_schacht_se_projektiert.sql",
 "-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_paa_schacht_se_wirdaufgehoben.sql",
-"-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_tezg_beschriftung_tezg_soll.sql",
 "-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_tezg_tezg_soll.sql",
 "-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_tezg_oekan.sql",
 "-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_mangel_knoten.sql",
 "-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_mangel_leitung.sql",
-"-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_mangel_tezg.sql" -Wait -NoNewWindow
+"-f .\sql\5_Datenumbau_MP_Publikation/vsadssmini_mangel_tezg.sql",
+# add views for mp (v2)
+"-f .\sql\5_Datenumbau_MP_Publikation/views_mp_pub.sql" -Wait -NoNewWindow -RedirectStandardOutput .\log\stdout_02_etl.log -RedirectStandardError .\log\stderr_02_etl.log

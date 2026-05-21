@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Erschliessungsplan
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_EP_Publikation_20230228 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_EP_Publikation_20231027
  * Inhalt:                Beschriftung Teileinzugsgebiete Entwässerungsart
  * Script:                vsadssmini_tezg_beschriftung_tezg_soll.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,8 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +23,7 @@ tezg_beschriftung_tezg_soll AS (
 
   SELECT 
     t_ili_tid AS aref,
+    t_datasetname as dataset,
     CASE
       WHEN textpos IS NULL THEN ST_PointOnSurface(perimeter)
       ELSE textpos
@@ -42,7 +45,7 @@ tezg_beschriftung_tezg_soll AS (
   WHERE perimeter IS NOT NULL AND bezeichnung IS NOT NULL
 )
 
-INSERT INTO se_ep_pub.tezg_beschriftung_tezg_soll (textinhalt, textpos, textori, texthali, textvali, aref, stilid)
+INSERT INTO se_ep_pub.tezg_beschriftung_tezg_soll (textinhalt, textpos, textori, texthali, textvali, aref, dataset, stilid)
   SELECT
     textinhalt,
     textpos,
@@ -50,7 +53,9 @@ INSERT INTO se_ep_pub.tezg_beschriftung_tezg_soll (textinhalt, textpos, textori,
     texthali,
     textvali,
     aref,
+    dataset,
     stilid
   FROM tezg_beschriftung_tezg_soll
   WHERE textinhalt IS NOT NULL
-  AND stilid IS NOT NULL;
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;

@@ -4,13 +4,15 @@
  * 
  * Planwerk:              Massnahmenplan
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20230331 
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20231027 
  * Inhalt:                Mangel Knoten (Knoten ohne StilId)
  * Script:                vsadssmini_mangel_knoten.sql
  * Bearbeitung:           Stefan Henrich, moflex Infra GmbH, <stefan.henrich@moflex.ch> (she)
  * 
  * Versionierung:
  * 0.1.0                  (she) Initialversion
+ * 0.2.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -18,7 +20,10 @@ WITH
 mangel_k AS (
 
   SELECT
-    *
+    t_ili_tid,
+    lage,
+    t_datasetname AS dataset,
+    stilid
   FROM vsadssmini.vsadssmini_knoten k
   LEFT JOIN (
     SELECT oid_dss, stilid
@@ -31,11 +36,13 @@ mangel_k AS (
   AND k.funktionhierarchisch LIKE 'PAA'
 )
 
-INSERT INTO se_mp_pub.mangel_knoten (oid_dss, lage, beschreibung, stilid)
+INSERT INTO se_mp_pub.mangel_knoten (oid_dss, lage, beschreibung, dataset, stilid)
   SELECT
     t_ili_tid,
     lage,
     'Objektinformationen mangelhaft für korrekte Darstellung',
+    dataset,
     'P_mangel'
   FROM mangel_k
-  WHERE stilid IS NULL;
+  WHERE stilid IS NULL
+  AND dataset LIKE :dset;

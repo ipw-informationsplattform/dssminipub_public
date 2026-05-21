@@ -1,12 +1,12 @@
 $JRE     = 'C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java.exe'
 $JRE_OPT = '-jar'
-$V_TOOL  = 'C:\Software\ili2pg\bin\ili2pg-4.10.0\ili2pg-4.10.0.jar'
+$V_TOOL  = 'C:\Software\ili2pg\bin\ili2pg-5.3.1\ili2pg-5.3.1.jar'
 
-$V_MODEL_WK   = 'SO_AFU_VSADSSMINI_WK_Publikation_20230331'
-$V_MODEL_EP   = 'SO_AFU_VSADSSMINI_EP_Publikation_20230331'
-$V_MODEL_TEZG = 'SO_AFU_VSADSSMINI_TEZG_Publikation_20230331'
-$V_MODEL_ZPK  = 'SO_AFU_VSADSSMINI_ZPK_Publikation_20230331'
-$V_MODEL_MP   = 'SO_AFU_VSADSSMINI_MP_Publikation_20230331'
+$V_MODEL_WK   = 'SO_AFU_VSADSSMINI_WK_Publikation_20231027'
+$V_MODEL_EP   = 'SO_AFU_VSADSSMINI_EP_Publikation_20231027'
+$V_MODEL_TEZG = 'SO_AFU_VSADSSMINI_TEZG_Publikation_20231027'
+$V_MODEL_ZPK  = 'SO_AFU_VSADSSMINI_ZPK_Publikation_20231027'
+$V_MODEL_MP   = 'SO_AFU_VSADSSMINI_MP_Publikation_20231027'
 
 $V_DATA_WK   = '.\publikationsdaten\xtf\vsadssmini_wk_publikation.xtf'
 $V_DATA_EP   = '.\publikationsdaten\xtf\vsadssmini_ep_publikation.xtf'

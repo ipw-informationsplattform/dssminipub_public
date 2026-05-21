@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Massnahmenplan
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20230228
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20231027
  * Inhalt:                ALR Anschlusspflicht an öffentliche Kanalisation
  * Script:                vsadssmini_alr_tezg.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,9 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 0.8.0                  (she) Ergänzung fehlendes Attribut oid_dss
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -20,6 +23,8 @@ WITH
 alr_tezg AS (
 
   SELECT 
+    t_ili_tid as oid_dss,
+    t_datasetname as dataset,
     abflussbegrenzung_geplant,
     abflussbegrenzung_ist,
     abflussbeiwert_rw_geplant,
@@ -55,7 +60,7 @@ alr_tezg AS (
   WHERE perimeter IS NOT NULL
 )
 
-INSERT INTO se_mp_pub.alr_tezg (abflussbegrenzung_geplant, abflussbegrenzung_ist, abflussbeiwert_rw_geplant, abflussbeiwert_rw_ist, abflussbeiwert_sw_geplant, abflussbeiwert_sw_ist, befestigungsgrad_rw_geplant, befestigungsgrad_rw_ist, befestigungsgrad_sw_geplant, befestigungsgrad_sw_ist, bemerkung, bezeichnung, direkteinleitung_in_gewaesser_geplant, direkteinleitung_in_gewaesser_ist, einwohnerdichte_geplant, einwohnerdichte_ist, entwaesserungssystem_geplant, entwaesserungssystem_ist, flaeche, fremdwasseranfall_geplant, fremdwasseranfall_ist, retention_geplant, retention_ist, schmutzabwasseranfall_geplant, schmutzabwasseranfall_ist, versickerung_geplant, versickerung_ist, perimeter, stilid)
+INSERT INTO se_mp_pub.alr_tezg (abflussbegrenzung_geplant, abflussbegrenzung_ist, abflussbeiwert_rw_geplant, abflussbeiwert_rw_ist, abflussbeiwert_sw_geplant, abflussbeiwert_sw_ist, befestigungsgrad_rw_geplant, befestigungsgrad_rw_ist, befestigungsgrad_sw_geplant, befestigungsgrad_sw_ist, bemerkung, bezeichnung, direkteinleitung_in_gewaesser_geplant, direkteinleitung_in_gewaesser_ist, einwohnerdichte_geplant, einwohnerdichte_ist, entwaesserungssystem_geplant, entwaesserungssystem_ist, flaeche, fremdwasseranfall_geplant, fremdwasseranfall_ist, oid_dss, retention_geplant, retention_ist, schmutzabwasseranfall_geplant, schmutzabwasseranfall_ist, versickerung_geplant, versickerung_ist, perimeter, dataset, stilid)
   SELECT
     abflussbegrenzung_geplant,
     abflussbegrenzung_ist,
@@ -78,6 +83,7 @@ INSERT INTO se_mp_pub.alr_tezg (abflussbegrenzung_geplant, abflussbegrenzung_ist
     flaeche,
     fremdwasseranfall_geplant,
     fremdwasseranfall_ist,
+    oid_dss,
     retention_geplant,
     retention_ist,
     schmutzabwasseranfall_geplant,
@@ -85,6 +91,8 @@ INSERT INTO se_mp_pub.alr_tezg (abflussbegrenzung_geplant, abflussbegrenzung_ist
     versickerung_geplant,
     versickerung_ist,
     perimeter,
+    dataset,
     stilid
   FROM alr_tezg
-  WHERE stilid IS NOT NULL;
+  WHERE stilid IS NOT NULL
+  AND dataset LIKE :dset;

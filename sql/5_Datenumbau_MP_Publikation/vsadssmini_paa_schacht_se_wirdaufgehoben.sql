@@ -4,7 +4,7 @@
  * 
  * Planwerk:              Massnahmenplan
  * INTERLIS Quellmodell:  VSADSSMINI_2020_LV95 VERSION "25.06.2021"
- * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20230228
+ * INTERLIS Zielmodell :  SO_AFU_VSADSSMINI_MP_Publikation_20231027
  * Inhalt:                PAA Schächte SE, Status 'wird aufgehoben'
  * Script:                vsadssmini_paa_schacht_se_wirdaufgehoben.sql
  * Bearbeitung:           Doris Vath, Amt für Umwelt, Kt. Solothurn, <doris.vath@bd.so.ch> (dva)
@@ -13,6 +13,10 @@
  * Versionierung:
  * 0.6.0                  (she) Ergänzung Metadaten zum Script
  * 0.6.1                  (she) Formatierung INSERT, Anpassung Zielmodell
+ * 0.7.0                  (she) Anpassung Zielmodell, Ergänzung Dataset
+ * 0.8.0                  (she) Ergänzung Stil 'P_Entl_dr_aufg'
+ * 0.9.0                  (she) Ausschluss Drainage
+ * 1.0.0                  (she) Einführung Parameter :dset für Dataset
  */
 
 WITH
@@ -21,6 +25,7 @@ schaechte AS (
 
   SELECT
     k.t_ili_tid AS oid_dss,
+    k.t_datasetname as dataset,
     REPLACE(k.nutzungsart_ist, '_', ' ') AS nutzungsart_ist,
     REPLACE(k.nutzungsart_geplant, '_', ' ') AS nutzungsart_geplant,
     CASE
@@ -59,6 +64,9 @@ schaechte AS (
     k.deckelkote,
     k.sohlenkote,
     k.zustandserhebung_jahr,
+    l.funktionhydraulisch AS leitung_funktionhydraulisch,
+    l.funktionhierarchisch AS leitung_funktionhierarchisch,
+    l.nutzungsart_ist AS leitung_nutzungsart_ist,
     eig.organisationstyp AS eigentuemer_organisationstyp,
     eig.bezeichnung AS eigentuemer_bezeichnung,
     betr.organisationstyp AS betreiber_organisationstyp,
@@ -87,17 +95,19 @@ schaechte AS (
               WHEN k.nutzungsart_geplant = 'Mischabwasser' THEN 'P_MA_dr_aufg'
               WHEN k.nutzungsart_geplant IN ('Schmutzabwasser','Industrieabwasser') THEN 'P_SA_dr_aufg'
               WHEN k.nutzungsart_geplant IN ('Reinabwasser','Niederschlagsabwasser') THEN 'P_RA_dr_aufg'
-              WHEN k.nutzungsart_geplant IN ('andere','unbekannt','entlastetes_Mischabwasser') THEN 'P_unbekannt_dr_aufg'
+              WHEN k.nutzungsart_geplant = 'entlastetes_Mischabwasser' THEN 'P_Entl_dr_aufg'
+              WHEN k.nutzungsart_geplant IN ('andere','unbekannt') THEN 'P_unbekannt_dr_aufg'
             END
         END
     END AS stilid
   FROM vsadssmini.vsadssmini_knoten k
+  LEFT JOIN vsadssmini.vsadssmini_leitung l ON l.knoten_vonref = k.t_id
   LEFT JOIN vsadssmini.administration_organisation eig ON k.eigentuemerref = eig.t_id
   LEFT JOIN vsadssmini.administration_organisation betr ON k.betreiberref = betr.t_id
   WHERE k.lage IS NOT NULL
 )
 
-INSERT INTO se_mp_pub.paa_schacht_se (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, deckelkote, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktion, funktionhierarchisch, lage, nutzungsart_ist, nutzungsart_geplant, oid_dss, sohlenkote, astatus, stilid, zustandserhebung_jahr)
+INSERT INTO se_mp_pub.paa_schacht_se (baujahr, baulicherzustand, betreiber_bezeichnung, betreiber_organisationstyp, bezeichnung, deckelkote, eigentuemer_bezeichnung, eigentuemer_organisationstyp, finanzierung, funktion, funktionhierarchisch, lage, nutzungsart_ist, nutzungsart_geplant, oid_dss, sohlenkote, astatus, dataset, stilid, zustandserhebung_jahr)
   SELECT
     baujahr,
     baulicherzustand,
@@ -116,9 +126,18 @@ INSERT INTO se_mp_pub.paa_schacht_se (baujahr, baulicherzustand, betreiber_bezei
     oid_dss,
     sohlenkote,
     astatus,
+    dataset,
     stilid,
     zustandserhebung_jahr
   FROM schaechte
   WHERE astatus = 'in_Betrieb.wird_aufgehoben'
-  AND funktionhierarchisch = 'PAA'
-  AND stilid IS NOT NULL;
+  AND (
+    NOT (
+      leitung_funktionhierarchisch LIKE 'SAA.andere'
+      AND leitung_funktionhydraulisch IN ('Drainagetransportleitung', 'Sickerleitung', 'Pumpendruckleitung')
+      AND leitung_nutzungsart_ist LIKE 'Reinabwasser'
+    )
+    OR leitung_funktionhydraulisch IS NULL
+  )
+  AND stilid IS NOT NULL
+  AND dataset LIKE :dset;
